@@ -19,6 +19,10 @@ function Contact() {
         children: "",
         infants: "",
         arrival: "",
+        departure: "",
+        package: "",
+        pickup: "",
+        drop: "",
         source: "",
         subject: "",
         message: ""
@@ -31,7 +35,7 @@ function Contact() {
     const handleSubmit = (e) => {
         e.preventDefault();
 
-        const whatsappNumber = "94742723210"; // Your Kurumba Holidays WhatsApp
+        const whatsappNumber = "94742723210"; // Your Sanju Tours WhatsApp
 
         const text = `
             New Tour Inquiry 🌴
@@ -47,6 +51,12 @@ function Contact() {
             Infants: ${formData.infants}
 
             Arrival Date: ${formData.arrival}
+            Departure Date: ${formData.departure}
+
+            Tour Package: ${formData.package}
+            Pick Up: ${formData.pickup}
+            Drop: ${formData.drop}
+
             Found via: ${formData.source}
 
             Subject: ${formData.subject}
@@ -99,7 +109,7 @@ function Contact() {
                             data-aos-delay="150"
                             className="mt-4 text-gray-600 max-w-2xl mx-auto"
                         >
-                            Come join Kurumba Holidays and discover the wonders of Sri Lanka — an enchanting island that offers something new with every visit. With our local expertise and personalized service, we create tour experiences tailored to your interests while showcasing the very best the island has to offer.
+                            Come join Sanju Tours and discover the wonders of Sri Lanka — an enchanting island that offers something new with every visit. With our local expertise and personalized service, we create tour experiences tailored to your interests while showcasing the very best the island has to offer.
                         </p>
                     </div>
 
@@ -437,6 +447,67 @@ function Contact() {
                                 />
                             </div>
 
+                            {/* Departure Date */}
+                            <div>
+                                <label className="text-sm font-medium">Departure Date *</label>
+                                <input
+                                    type="date"
+                                    required
+                                    name="departure"
+                                    value={formData.departure}
+                                    onChange={handleChange}
+                                    className="w-full mt-2 p-3 rounded-full border"
+                                />
+                            </div>
+
+                            {/* Tour Package */}
+                            <div className="md:col-span-2">
+                                <label className="text-sm font-medium">Select Tour Package *</label>
+                                <select
+                                    required
+                                    name="package"
+                                    value={formData.package}
+                                    onChange={handleChange}
+                                    className="w-full mt-2 p-3 rounded-full border"
+                                >
+                                    <option value="">Select package</option>
+                                    <option>21-Days Sri Lanka Grand Tour</option>
+                                    <option>15-Days Sri Lanka Tour</option>
+                                    <option>8-Days Sri Lanka Tour</option>
+                                    <option>5-Days Sri Lanka Tour</option>
+                                    <option>7-Days Sri Lanka Tour</option>
+                                    <option>10-Days Sri Lanka Tour</option>
+                                </select>
+                            </div>
+
+                            {/* Pick up place */}
+                            <div>
+                                <label className="text-sm font-medium">Pick Up Place *</label>
+                                <input
+                                    type="text"
+                                    required
+                                    name="pickup"
+                                    value={formData.pickup}
+                                    onChange={handleChange}
+                                    className="w-full mt-2 p-3 rounded-full border"
+                                    placeholder="Airport / Hotel"
+                                />
+                            </div>
+
+                            {/* Drop place */}
+                            <div>
+                                <label className="text-sm font-medium">Drop Place *</label>
+                                <input
+                                    type="text"
+                                    required
+                                    name="drop"
+                                    value={formData.drop}
+                                    onChange={handleChange}
+                                    className="w-full mt-2 p-3 rounded-full border"
+                                    placeholder="Airport / Hotel"
+                                />
+                            </div>
+
                             {/* How did you find us */}
                             <div className="md:col-span-2">
                                 <label className="text-sm font-medium">How did you find us *</label>
@@ -509,7 +580,7 @@ function Contact() {
                     {/* Google Map */}
                     <div data-aos="fade-right" className="w-full h-[500px] rounded-xl overflow-hidden shadow-lg">
                         <iframe
-                            title="Kurumba Holidays Location"
+                            title="Sanju Tours Location"
                             src="https://www.google.com/maps?q=384/121%20Wakwella%20Road%2C%20Galle%2080000%2C%20Sri%20Lanka&output=embed"
                             className="w-full h-full border-0"
                             allowFullScreen
@@ -521,7 +592,7 @@ function Contact() {
                     {/* Office Details */}
                     <div data-aos="fade-left" className="bg-gray-50 rounded-xl shadow-lg p-8 md:p-12">
                         <h3 className="text-2xl font-bold text-[#0b4c7d] mb-6">
-                            Kurumba Holidays (Pvt.) Ltd.
+                            Sanju Tours (Pvt.) Ltd.
                         </h3>
 
                         <div className="space-y-6 text-gray-700">

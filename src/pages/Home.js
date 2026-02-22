@@ -31,14 +31,8 @@ import g8 from "../assets/gallery11.jpg";
 import discoverImg from "../assets/Arugam Bay2.jpg";
 
 import destination1 from "../assets/colombo.jpg";
-import destination2 from "../assets/yala-national-park1.jpg";
-import destination3 from "../assets/sigiriya.jpg";
-import destination4 from "../assets/galle.jpg";
-import destination5 from "../assets/kandy.jpg";
-import destination6 from "../assets/tea-estate.jpg";
-import destination7 from "../assets/colomboKithulgala1.jpg";
-import destination8 from "../assets/ramayana2.jpg";
-import destination9 from "../assets/ella.jpg";
+import destination2 from "../assets/sigiriya.jpg";
+import destination3 from "../assets/ella.jpg";
 
 import luxuryCar from "../assets/Toyota Axio.jpg";
 import van from "../assets/toyota-kdh-highroof.jpg";
@@ -810,51 +804,75 @@ function Home() {
             <p className="text-gray-500 mt-2">
               Destinations That Speak to You
             </p>
-
-            <button
-            onClick={() => navigate("/destinations")}
-             className="mt-6 bg-[#0b5c87] text-white px-6 py-3 rounded-lg hover:bg-[#094b6f] transition">
-              See More
-            </button>
           </div>
 
-          {/* Grid */}
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+          {/* Cards Grid */}
+          <div className="grid grid-cols-1 gap-10 sm:grid-cols-2 lg:grid-cols-3">
 
             {[
-              { name: "Colombo", img: destination1 },
-              { name: "Yala", img: destination2 },
-              { name: "Sigiriya", img: destination3 },
-              { name: "Galle", img: destination4 },
-              { name: "Kandy", img: destination5 },
-              { name: "Nuwara Eliya", img: destination6 },
-              { name: "Kitulgala", img: destination7 },
-              { name: "Jaffna", img: destination8 },
-              { name: "Ella", img: destination9 },
+              {
+                id: "colombo",
+                img: destination1,
+                title: "Colombo",
+                desc: "**Colombo** is Sri Lanka’s commercial capital, known for its vibrant city life, coastal views, and mix of colonial charm and modern development...",
+              },
+              {
+                id: "sigiriya",
+                img: destination2,
+                title: "Sigiriya",
+                desc: "Sigiriya is an ancient rock fortress famous for its stunning frescoes, landscaped gardens, and breathtaking panoramic views from the summit...",
+              },
+              {
+                id: "ella",
+                img: destination3,
+                title: "Ella",
+                desc: "Ella is a scenic hill-country village known for its lush tea plantations, cool climate, waterfalls, and iconic viewpoints like Ella Rock and Nine Arches Bridge...",
+              },
             ].map((place, index) => (
               <div
                 key={index}
-                className="relative group overflow-hidden rounded-xl shadow-lg"
-                data-aos="zoom-in"
-                data-aos-delay={index * 80}
+                data-aos="fade-up"
+                data-aos-delay={index * 100}
+                className="overflow-hidden rounded-xl border border-gray-200 shadow-sm transition hover:shadow-lg"
               >
+                {/* Image */}
                 <img
                   src={place.img}
-                  alt={place.name}
-                  className="w-full h-[220px] object-cover transition duration-700 group-hover:scale-110"
+                  alt={place.title}
+                  className="h-56 w-full object-cover"
                 />
 
-                {/* Overlay */}
-                <div className="absolute inset-0 bg-black/35" />
+                {/* Content */}
+                <div className="p-6">
+                  <h3 className="mb-2 text-lg font-bold text-black">
+                    {place.title}
+                  </h3>
 
-                {/* Title */}
-                <h3 className="absolute top-4 left-4 text-white text-lg font-semibold">
-                  {place.name}
-                </h3>
+                  <p className="mb-4 text-sm text-gray-600">
+                    {place.desc}
+                  </p>
+
+                  <button
+                    onClick={() => navigate(`/destinations/${place.id}`)}
+                    className="rounded bg-yellow-400 px-5 py-2 text-sm font-semibold text-black transition hover:bg-yellow-500"
+                  >
+                    Read More
+                  </button>
+                </div>
               </div>
             ))}
-
           </div>
+
+          {/* See More Button */}
+          <div className="mt-16 text-center">
+            <button
+              onClick={() => navigate("/destinations")}
+              className="rounded-lg bg-black px-8 py-3 text-sm font-semibold text-red-500 transition hover:bg-gray-900"
+            >
+              See More Places
+            </button>
+          </div>
+
         </div>
       </section>
 

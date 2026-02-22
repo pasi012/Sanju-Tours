@@ -10,7 +10,7 @@ function TermsAndCondition() {
     }, []);
 
     const items = [
-        { id: 1, title: "General Terms & Conditions", desc: `Welcome to Balasooriya Travels provides services...` },
+        { id: 1, title: "General Terms & Conditions", desc: `Welcome to Sanju Tours provides services...` },
         { id: 2, title: "General Reminder", desc: `The programme is based on the availability...` },
         { id: 3, title: "Hotel Rules and Regulations", desc: `The official check-in time at all hotels...` },
         { id: 4, title: "Booking Your Holiday", desc: `All bookings must be made through...` },
@@ -19,7 +19,7 @@ function TermsAndCondition() {
         { id: 7, title: "General Terms and Conditions", desc: `The rates are net and include all government taxes...` },
         { id: 8, title: "Cancellation Charges", desc: `21 days or less – 100% cancellation charge...` },
         { id: 9, title: "Copyright and Restrictions on Use", desc: `All trademarks, copyright, and other intellectual property...` },
-        { id: 10, title: "Privacy Policy", desc: `At Balasooriya Travels, we are committed to protecting the privacy...` }
+        { id: 10, title: "Privacy Policy", desc: `At Sanju Tours, we are committed to protecting the privacy...` }
     ];
 
     const [active, setActive] = useState(1);

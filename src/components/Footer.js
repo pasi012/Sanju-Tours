@@ -32,7 +32,7 @@ function Footer() {
           <div className="text-center lg:text-left">
             <img
               src={logo}
-              alt="Balasooriya Travels Logo"
+              alt="Sanju Tours Logo"
               className="mx-auto mb-5 w-[160px] sm:w-[180px] lg:mx-0 lg:w-[200px]"
             />
 

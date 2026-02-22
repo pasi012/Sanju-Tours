@@ -71,7 +71,7 @@ function About() {
                         <div data-aos="fade-left" className="text-gray-700 space-y-4">
 
                             <p>
-                                Balasooriya Travels is a well-known company which has
+                                Sanju Tours is a well-known company which has
                                 established a leading standard in all around Sri Lanka for more than
                                 10 years. Delivering a safe, comfortable and quick service to our
                                 prestige customers is the purpose of our company.

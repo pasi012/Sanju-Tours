@@ -47,7 +47,7 @@ const PrivacyPolicy = () => {
                 </h2>
 
                 <p className="text-gray-600 leading-relaxed mb-8">
-                    At Balasooriya Travels, we are committed to protecting the privacy and
+                    At Sanju Tours, we are committed to protecting the privacy and
                     security of our clients’ personal information. This Privacy Policy
                     outlines how we collect, use, and safeguard your information when
                     you visit our website or make an inquiry. By using our website,
