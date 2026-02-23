@@ -1,0 +1,890 @@
+import { useEffect, useState } from "react";
+import AOS from "aos";
+import "aos/dist/aos.css";
+
+import { useNavigate } from "react-router-dom";
+
+import aboutHero from "../../assets/ella.jpg";
+
+import dhamma from "../../assets/21days.png";
+import sigiriya from "../../assets/place15.jpg";
+import kandy from "../../assets/tea-estate.jpg";
+import temple from "../../assets/ella.jpg";
+
+function Days21Tour() {
+
+    const navigate = useNavigate();
+
+    const images = [dhamma, sigiriya, kandy, temple];
+
+    const [selectedImage, setSelectedImage] = useState(images[0]);
+
+    const [day1, setDay1] = useState(true);
+    const [day2, setDay2] = useState(false);
+    const [day3, setDay3] = useState(false);
+    const [day4, setDay4] = useState(false);
+    const [day5, setDay5] = useState(false);
+    const [day6, setDay6] = useState(false);
+    const [day7, setDay7] = useState(false);
+    const [day8, setDay8] = useState(false);
+    const [day9, setDay9] = useState(false);
+    const [day10, setDay10] = useState(false);
+    const [day11, setDay11] = useState(false);
+    const [day12, setDay12] = useState(false);
+    const [day13, setDay13] = useState(false);
+    const [day14, setDay14] = useState(false);
+    const [day15, setDay15] = useState(false);
+    const [day16, setDay16] = useState(false);
+    const [day17, setDay17] = useState(false);
+    const [day18, setDay18] = useState(false);
+    const [day19, setDay19] = useState(false);
+    const [day20, setDay20] = useState(false);
+    const [day21, setDay21] = useState(false);
+
+    useEffect(() => {
+        AOS.init({ duration: 1000, once: true });
+    }, []);
+
+    return (
+        <div className="w-full overflow-hidden">
+
+            {/* ================= HERO ================= */}
+            <section className="relative h-[40vh] w-full">
+                <div
+                    className="absolute inset-0 bg-cover bg-center"
+                    style={{ backgroundImage: `url(${aboutHero})` }}
+                />
+                <div className="absolute inset-0 bg-black/60" />
+
+                <div className="relative z-10 flex h-full flex-col items-center justify-center text-center text-white">
+                    <h1
+                        data-aos="fade-up"
+                        className="text-3xl sm:text-4xl md:text-5xl lg:text-4xl font-extrabold leading-tight"
+                    >
+                        21 Days of Sri Lanka Grand Tour
+                    </h1>
+                    <p
+                        data-aos="fade-up"
+                        data-aos-delay="150"
+                        className="mt-4 sm:mt-6 max-w-full sm:max-w-2xl md:max-w-3xl text-sm sm:text-base md:text-lg"
+                    >
+                        Experience the heart of Sri Lanka through its culture and heritage.
+                    </p>
+                </div>
+            </section>
+
+            {/* ================= CULTURAL HIGHLIGHTS ================= */}
+            <section className="bg-white -py-2">
+                <div className="mx-auto max-w-7xl px-6 text-center">
+
+                    <p
+                        data-aos="fade-up"
+                        data-aos-delay="150"
+                        className="mx-auto mt-6 max-w-4xl text-gray-600 leading-relaxed"
+                    >
+                        This 21-Day Sri Lanka Grand Tour immerses you in the island’s stunning landscapes, rich history, and vibrant culture. Begin with the serene beaches of Negombo, then explore the ancient ruins of Anuradhapura and the wildlife of Wilpattu National Park. Journey north to the cultural heart of Jaffna, unwind on Trincomalee and Pasikuda’s pristine beaches, and climb the iconic Sigiriya Rock Fortress. Discover the scenic beauty of Kandy, Nuwara Eliya, and Ella, including a thrilling zip-lining adventure. Continue through Yala’s wildlife haven and down the southern coast, visiting Mirissa, Galle, and the Madu River mangroves, with beach relaxation in Bentota. This tour offers an ideal balance of cultural discovery, adventure, and relaxation, showcasing the best of Sri Lanka’s nature, heritage, and coastal charm. Perfect for travelers seeking a comprehensive and unforgettable Sri Lankan experience.
+                    </p>
+
+                    {/* Duration Bar */}
+                    <div
+                        data-aos="fade-up"
+                        data-aos-delay="250"
+                        className="mx-auto mt-10 flex max-w-4xl items-center justify-center rounded-md bg-gradient-to-r from-[#0A3A5E] to-[#1C6EA4] py-5 text-white"
+                    >
+                        <div className="flex items-center gap-4">
+                            <span className="text-3xl">📅</span>
+                            <div className="text-left">
+                                <p className="text-sm uppercase tracking-widest">Duration</p>
+                                <p className="text-xl font-bold">21 Days</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    {/* Main Image */}
+                    <div
+                        data-aos="zoom-in"
+                        data-aos-delay="300"
+                        className="mx-auto mt-10 overflow-hidden rounded-xl shadow-xl"
+                    >
+                        <img
+                            src={selectedImage}
+                            alt="Selected Tour"
+                            className="w-full h-[250px] sm:h-[350px] md:h-[450px] lg:h-[600px] xl:h-[720px] object-cover transition duration-500"
+                        />
+                    </div>
+
+                    {/* Thumbnail Gallery */}
+                    <div
+                        data-aos="fade-up"
+                        data-aos-delay="400"
+                        className="mx-auto mt-8 grid max-w-5xl grid-cols-2 gap-4 sm:grid-cols-4"
+                    >
+                        {images.map((img, index) => (
+                            <img
+                                key={index}
+                                src={img}
+                                onClick={() => setSelectedImage(img)}
+                                className={`h-28 w-full cursor-pointer rounded-lg object-cover transition-all duration-300 
+                                hover:scale-105
+                                ${selectedImage === img ? "ring-4 ring-[#0A3A5E]" : "opacity-70"}
+                            `}
+                            />
+                        ))}
+                    </div>
+
+                </div>
+            </section>
+
+            {/* ================= TOUR ITINERARY ================= */}
+            <section className="bg-gray-50 py-10">
+                <div className="mx-auto max-w-6xl px-6">
+
+                    <h2
+                        data-aos="fade-up"
+                        className="text-center text-3xl sm:text-4xl md:text-5xl lg:text-4xl font-extrabold leading-tight"
+                    >
+                        Tour Itinerary
+                    </h2>
+
+                    <div className="mt-12 space-y-6">
+
+                        {/* ================= DAY 1 ================= */}
+                        <div data-aos="fade-up" className="overflow-hidden rounded-lg border bg-white shadow">
+                            <button
+                                onClick={() => setDay1(!day1)}
+                                className="flex w-full items-center justify-between bg-gray-100 px-6 py-5 text-left font-semibold text-[#0A3A5E]"
+                            >
+                                <span>Day 1: Arrival in Colombo & Transfer to Negombo</span>
+                                <span>{day1 ? "−" : "+"}</span>
+                            </button>
+
+                            {day1 && (
+                                <div className="space-y-4 px-6 py-6 text-gray-700 leading-relaxed">
+                                    <p>
+                                        Arrival: Meet and greet at Colombo Airport.
+                                    </p>
+
+                                    <p>
+                                        Transfer to Negombo: Approx. 30-minute drive.
+                                    </p>
+
+                                    <p>
+                                        Sightseeing in Negombo: Explore the Dutch Canal, local fish market, and fishing villages.
+                                    </p>
+
+                                    <p className="font-semibold">Overnight stay in Colombo.</p>
+
+                                </div>
+                            )}
+                        </div>
+
+                        {/* ================= DAY 2 ================= */}
+                        <div data-aos="fade-up" data-aos-delay="150" className="overflow-hidden rounded-lg border bg-white shadow">
+                            <button
+                                onClick={() => setDay2(!day2)}
+                                className="flex w-full items-center justify-between bg-gray-100 px-6 py-5 text-left font-semibold text-[#0A3A5E]"
+                            >
+                                <span>Day 2: Negombo to Wilpattu National Park & Anuradhapura</span>
+                                <span>{day2 ? "−" : "+"}</span>
+                            </button>
+
+                            {day2 && (
+                                <div className="space-y-4 px-6 py-6 text-gray-700 leading-relaxed">
+                                    <p>
+                                        Breakfast at Hotel.
+                                    </p>
+
+                                    <p>
+                                        Transfer to Wilpattu National Park: Approx. 2-hour drive.
+                                    </p>
+
+                                    <p>
+                                        Wilpattu Safari: Jeep safari to spot wildlife like elephants, leopards, and bird species.
+                                    </p>
+
+                                    <p>
+                                        Drive to Anuradhapura: Approx. 1-hour drive.
+                                    </p>
+
+                                    <p className="font-semibold">Overnight stay in Anuradhapura.</p>
+
+                                </div>
+                            )}
+                        </div>
+
+                        {/* ================= DAY 3 ================= */}
+                        <div
+                            data-aos="fade-up"
+                            data-aos-delay="300"
+                            className="overflow-hidden rounded-lg border bg-white shadow"
+                        >
+                            <button
+                                onClick={() => setDay3(!day3)}
+                                className="flex w-full items-center justify-between bg-gray-100 px-6 py-5 text-left font-semibold text-[#0A3A5E]"
+                            >
+                                <span>Day 3: Explore Ancient Anuradhapura</span>
+                                <span>{day3 ? "−" : "+"}</span>
+                            </button>
+
+                            {day3 && (
+                                <div className="space-y-5 px-6 py-6 text-gray-700 leading-relaxed">
+
+                                    <p>
+                                        Sacred Bo Tree (Sri Maha Bodhi): Visit the ancient Bodhi tree and learn about Buddhist history.
+                                    </p>
+
+                                    <p>
+                                        Ruwanwelisaya & Jethawanaramaya Stupas: Marvel at these massive, sacred stupas.
+                                    </p>
+
+                                    <p>
+                                        Isurumuniya Temple: Admire intricate stone carvings.
+                                    </p>
+
+                                    <p className="font-semibold text-[#0A3A5E]">
+                                        Overnight stay in Anuradhapura.
+                                    </p>
+
+                                </div>
+                            )}
+                        </div>
+
+                        {/* ================= DAY 4 ================= */}
+                        <div data-aos="fade-up" data-aos-delay="300" className="overflow-hidden rounded-lg border bg-white shadow">
+                            <button onClick={() => setDay4(!day4)} className="flex w-full items-center justify-between bg-gray-100 px-6 py-5 text-left font-semibold text-[#0A3A5E]">
+                                <span>Day 4: Anuradhapura to Jaffna</span>
+                                <span>{day4 ? "−" : "+"}</span>
+                            </button>
+                            {day4 && <div className="space-y-5 px-6 py-6 text-gray-700 leading-relaxed">
+
+                                <p>
+                                    Transfer to Jaffna: Approx. 3.5-hour drive.
+                                </p>
+
+                                <p>
+                                    Afternoon Exploration: Visit the iconic Jaffna Fort and the revered Nallur Kandaswamy Temple.
+                                </p>
+
+                                <p className="font-semibold text-[#0A3A5E]">
+                                    Overnight stay in Jaffna.
+                                </p>
+
+                            </div>
+                            }
+                        </div>
+
+                        {/* ================= DAY 5 ================= */}
+                        <div data-aos="fade-up" data-aos-delay="300" className="overflow-hidden rounded-lg border bg-white shadow">
+                            <button onClick={() => setDay5(!day5)} className="flex w-full items-center justify-between bg-gray-100 px-6 py-5 text-left font-semibold text-[#0A3A5E]">
+                                <span>Day 5: Full Day Jaffna Excursion</span>
+                                <span>{day5 ? "−" : "+"}</span>
+                            </button>
+                            {day5 && <div className="space-y-5 px-6 py-6 text-gray-700 leading-relaxed">
+
+                                <p>
+                                    Delft Island Tour (Optional): Discover unique landscapes and wild horses on the island.
+                                </p>
+
+                                <p>
+                                    Casuarina Beach: Enjoy a scenic beach in Jaffna.
+                                </p>
+
+                                <p>
+                                    Jaffna Library & Market: Explore cultural landmarks and local handicrafts.
+                                </p>
+
+                                <p className="font-semibold text-[#0A3A5E]">
+                                    Overnight stay in Jaffna.
+                                </p>
+
+                            </div>
+                            }
+                        </div>
+
+                        {/* ================= DAY 6 ================= */}
+                        <div data-aos="fade-up" data-aos-delay="300" className="overflow-hidden rounded-lg border bg-white shadow">
+                            <button onClick={() => setDay6(!day6)} className="flex w-full items-center justify-between bg-gray-100 px-6 py-5 text-left font-semibold text-[#0A3A5E]">
+                                <span>Day 6: Jaffna to Trincomalee</span>
+                                <span>{day6 ? "−" : "+"}</span>
+                            </button>
+                            {day6 && <div className="space-y-5 px-6 py-6 text-gray-700 leading-relaxed">
+
+                                <p>
+                                    Transfer to Trincomalee: Approx. 2.5-hour drive.
+                                </p>
+
+                                <p>
+                                    Koneswaram Temple: Discover this beautiful cliff-top temple with panoramic ocean views.
+                                </p>
+
+                                <p>
+                                    Nilaveli Beach: Relax on one of Sri Lanka’s finest beaches.
+                                </p>
+
+                                <p className="font-semibold text-[#0A3A5E]">
+                                    Overnight stay in Trincomalee.
+                                </p>
+
+                            </div>
+                            }
+                        </div>
+
+                        {/* ================= DAY 7 ================= */}
+                        <div data-aos="fade-up" data-aos-delay="300" className="overflow-hidden rounded-lg border bg-white shadow">
+                            <button onClick={() => setDay7(!day7)} className="flex w-full items-center justify-between bg-gray-100 px-6 py-5 text-left font-semibold text-[#0A3A5E]">
+                                <span>Day 7: Snorkeling Adventure at Pigeon Island</span>
+                                <span>{day7 ? "−" : "+"}</span>
+                            </button>
+                            {day7 && <div className="space-y-5 px-6 py-6 text-gray-700 leading-relaxed">
+
+                                <p>
+                                    Pigeon Island Excursion: Snorkel among vibrant coral reefs and tropical fish.
+                                </p>
+
+                                <p>
+                                    Relax and Lunch at Nilaveli Beach.
+                                </p>
+
+                                <p className="font-semibold text-[#0A3A5E]">
+                                    Overnight stay in Trincomalee.
+                                </p>
+
+                            </div>
+                            }
+                        </div>
+
+                        {/* ================= DAY 8 ================= */}
+                        <div data-aos="fade-up" data-aos-delay="300" className="overflow-hidden rounded-lg border bg-white shadow">
+                            <button onClick={() => setDay8(!day8)} className="flex w-full items-center justify-between bg-gray-100 px-6 py-5 text-left font-semibold text-[#0A3A5E]">
+                                <span>Day 8: Trincomalee to Pasikuda</span>
+                                <span>{day8 ? "−" : "+"}</span>
+                            </button>
+                            {day8 && <div className="space-y-5 px-6 py-6 text-gray-700 leading-relaxed">
+
+                                <p>
+                                    Drive to Pasikuda: Approx. 2-hour drive.
+                                </p>
+
+                                <p>
+                                    Pasikuda Beach: Unwind at this calm and pristine beach.
+                                </p>
+
+                                <p className="font-semibold text-[#0A3A5E]">
+                                    Overnight stay in Pasikuda.
+                                </p>
+
+                            </div>
+                            }
+                        </div>
+
+                        {/* ================= DAY 9 ================= */}
+                        <div data-aos="fade-up" data-aos-delay="300" className="overflow-hidden rounded-lg border bg-white shadow">
+                            <button onClick={() => setDay9(!day9)} className="flex w-full items-center justify-between bg-gray-100 px-6 py-5 text-left font-semibold text-[#0A3A5E]">
+                                <span>Day 9: Relax and Water Activities in Pasikuda</span>
+                                <span>{day9 ? "−" : "+"}</span>
+                            </button>
+                            {day9 && <div className="space-y-5 px-6 py-6 text-gray-700 leading-relaxed">
+
+                                <p>
+                                    Optional Water Sports: Jet skiing, paddleboarding, or a sunset cruise.
+                                </p>
+
+                                <p>
+                                    Full Day to Relax.
+                                </p>
+
+                                <p className="font-semibold text-[#0A3A5E]">
+                                    Overnight stay in Pasikuda.
+                                </p>
+
+                            </div>
+                            }
+                        </div>
+
+                        {/* ================= DAY 10 ================= */}
+                        <div data-aos="fade-up" data-aos-delay="300" className="overflow-hidden rounded-lg border bg-white shadow">
+                            <button onClick={() => setDay10(!day10)} className="flex w-full items-center justify-between bg-gray-100 px-6 py-5 text-left font-semibold text-[#0A3A5E]">
+                                <span>Day 10: Pasikuda to Sigiriya</span>
+                                <span>{day10 ? "−" : "+"}</span>
+                            </button>
+                            {day10 && <div className="space-y-5 px-6 py-6 text-gray-700 leading-relaxed">
+
+                                <p>
+                                    Transfer to Sigiriya: Approx. 3.5-hour drive.
+                                </p>
+
+                                <p>
+                                    Sigiriya Rock Fortress: Climb the iconic Lion Rock for panoramic views.
+                                </p>
+
+                                <p className="font-semibold text-[#0A3A5E]">
+                                    Overnight stay in Sigiriya.
+                                </p>
+
+                            </div>
+                            }
+                        </div>
+
+                        {/* ================= DAY 11 ================= */}
+                        <div data-aos="fade-up" data-aos-delay="300" className="overflow-hidden rounded-lg border bg-white shadow">
+                            <button onClick={() => setDay11(!day11)} className="flex w-full items-center justify-between bg-gray-100 px-6 py-5 text-left font-semibold text-[#0A3A5E]">
+                                <span>Day 11: Sigiriya & Village Tour</span>
+                                <span>{day11 ? "−" : "+"}</span>
+                            </button>
+                            {day11 && <div className="space-y-5 px-6 py-6 text-gray-700 leading-relaxed">
+
+                                <p>
+                                    Village Experience: Traditional bullock cart ride, cooking demonstration, and village lunch.
+                                </p>
+
+                                <p>
+                                    Sigiriya Wood Carving Shop: Observe traditional woodwork by local artisans.
+                                </p>
+
+                                <p className="font-semibold text-[#0A3A5E]">
+                                    Overnight stay in Sigiriya.
+                                </p>
+
+                            </div>
+                            }
+                        </div>
+
+                        {/* ================= DAY 12 ================= */}
+                        <div data-aos="fade-up" data-aos-delay="300" className="overflow-hidden rounded-lg border bg-white shadow">
+                            <button onClick={() => setDay12(!day12)} className="flex w-full items-center justify-between bg-gray-100 px-6 py-5 text-left font-semibold text-[#0A3A5E]">
+                                <span>Day 12: Sigiriya to Kandy via Dambulla</span>
+                                <span>{day12 ? "−" : "+"}</span>
+                            </button>
+                            {day12 && <div className="space-y-5 px-6 py-6 text-gray-700 leading-relaxed">
+
+                                <p>
+                                    Dambulla Cave Temple: Visit the ancient cave temple with intricate statues and murals.
+                                </p>
+
+                                <p>
+                                    Matale Spice Garden: Learn about Sri Lanka’s spice heritage.
+                                </p>
+
+                                <p>
+                                    Drive to Kandy: Approx. 1.5-hour drive.
+                                </p>
+
+                                <p className="font-semibold text-[#0A3A5E]">
+                                    Overnight stay in Kandy.
+                                </p>
+
+                            </div>
+                            }
+                        </div>
+
+                        {/* ================= DAY 13 ================= */}
+                        <div data-aos="fade-up" data-aos-delay="300" className="overflow-hidden rounded-lg border bg-white shadow">
+                            <button onClick={() => setDay13(!day13)} className="flex w-full items-center justify-between bg-gray-100 px-6 py-5 text-left font-semibold text-[#0A3A5E]">
+                                <span>Day 13: Explore Kandy</span>
+                                <span>{day13 ? "−" : "+"}</span>
+                            </button>
+                            {day13 && <div className="space-y-5 px-6 py-6 text-gray-700 leading-relaxed">
+
+                                <p>
+                                    Temple of the Sacred Tooth Relic: Discover this UNESCO-listed site.
+                                </p>
+
+                                <p>
+                                    Kandyan Cultural Show: Experience traditional dance and drumming.
+                                </p>
+
+                                <p>
+                                    Gem Museum and Lapidary: See Sri Lanka’s famous gems, including moonstones.
+                                </p>
+
+                                <p className="font-semibold text-[#0A3A5E]">
+                                    Overnight stay in Kandy.
+                                </p>
+
+                            </div>
+                            }
+                        </div>
+
+                        {/* ================= DAY 14 ================= */}
+                        <div data-aos="fade-up" data-aos-delay="300" className="overflow-hidden rounded-lg border bg-white shadow">
+                            <button onClick={() => setDay14(!day14)} className="flex w-full items-center justify-between bg-gray-100 px-6 py-5 text-left font-semibold text-[#0A3A5E]">
+                                <span>Day 14: Botanical Gardens & Craft Tour in Kandy</span>
+                                <span>{day14 ? "−" : "+"}</span>
+                            </button>
+                            {day14 && <div className="space-y-5 px-6 py-6 text-gray-700 leading-relaxed">
+
+                                <p>
+                                    Peradeniya Botanical Gardens: Stroll through Sri Lanka’s largest botanical garden.
+                                </p>
+
+                                <p>
+                                    Wood Carving Workshop: Watch artisans work on traditional carvings.
+                                </p>
+
+                                <p>
+                                    Optional Tea Factory Visit: Explore the tea-making process and enjoy tastings.
+                                </p>
+
+                                <p className="font-semibold text-[#0A3A5E]">
+                                    Overnight stay in Kandy.
+                                </p>
+
+                            </div>
+                            }
+                        </div>
+
+                        {/* ================= DAY 15 ================= */}
+                        <div data-aos="fade-up" data-aos-delay="300" className="overflow-hidden rounded-lg border bg-white shadow">
+                            <button onClick={() => setDay15(!day15)} className="flex w-full items-center justify-between bg-gray-100 px-6 py-5 text-left font-semibold text-[#0A3A5E]">
+                                <span>Day 15: Kandy to Nuwara Eliya</span>
+                                <span>{day15 ? "−" : "+"}</span>
+                            </button>
+                            {day15 && <div className="space-y-5 px-6 py-6 text-gray-700 leading-relaxed">
+
+                                <p>
+                                    Scenic Train Ride to Nuwara Eliya: Enjoy a picturesque journey through misty hills and tea estates.
+                                </p>
+
+                                <p>
+                                    Nuwara Eliya Sightseeing: Visit Gregory Lake and stroll through the town.
+                                </p>
+
+                                <p className="font-semibold text-[#0A3A5E]">
+                                    Overnight stay in Nuwara Eliya.
+                                </p>
+
+                            </div>
+                            }
+                        </div>
+
+                        {/* ================= DAY 16 ================= */}
+                        <div data-aos="fade-up" data-aos-delay="300" className="overflow-hidden rounded-lg border bg-white shadow">
+                            <button onClick={() => setDay16(!day16)} className="flex w-full items-center justify-between bg-gray-100 px-6 py-5 text-left font-semibold text-[#0A3A5E]">
+                                <span>Day 16: Nuwara Eliya to Ella – Scenic Train Ride</span>
+                                <span>{day16 ? "−" : "+"}</span>
+                            </button>
+                            {day16 && <div className="space-y-5 px-6 py-6 text-gray-700 leading-relaxed">
+
+                                <p>
+                                    Transfer to Ella by Train: Relish the stunning views on one of the world’s most scenic train rides.
+                                </p>
+
+                                <p>
+                                    Note: Your driver will meet you at Ella station with your luggage.
+                                </p>
+
+                                <p>
+                                    Relax in Ella: Enjoy the charming cafes and scenic landscapes.
+                                </p>
+
+                                <p className="font-semibold text-[#0A3A5E]">
+                                    Overnight stay in Ella.
+                                </p>
+
+                            </div>
+                            }
+                        </div>
+
+                        {/* ================= DAY 17 ================= */}
+                        <div data-aos="fade-up" data-aos-delay="300" className="overflow-hidden rounded-lg border bg-white shadow">
+                            <button onClick={() => setDay17(!day17)} className="flex w-full items-center justify-between bg-gray-100 px-6 py-5 text-left font-semibold text-[#0A3A5E]">
+                                <span>Day 17: Ella Adventure & Sightseeing</span>
+                                <span>{day17 ? "−" : "+"}</span>
+                            </button>
+                            {day17 && <div className="space-y-5 px-6 py-6 text-gray-700 leading-relaxed">
+
+                                <p>
+                                    Zip-lining Adventure: Thrill-seekers can zip-line over Ella’s lush valleys.
+                                </p>
+
+                                <p>
+                                    Nine Arches Bridge: Visit this iconic railway bridge surrounded by nature.
+                                </p>
+
+                                <p>
+                                    Little Adam’s Peak: Take a short hike for panoramic views.
+                                </p>
+
+                                <p className="font-semibold text-[#0A3A5E]">
+                                    Overnight stay in Ella.
+                                </p>
+
+                            </div>
+                            }
+                        </div>
+
+                        {/* ================= DAY 18 ================= */}
+                        <div data-aos="fade-up" data-aos-delay="300" className="overflow-hidden rounded-lg border bg-white shadow">
+                            <button onClick={() => setDay18(!day18)} className="flex w-full items-center justify-between bg-gray-100 px-6 py-5 text-left font-semibold text-[#0A3A5E]">
+                                <span>Day 18: Ella to Yala National Park</span>
+                                <span>{day18 ? "−" : "+"}</span>
+                            </button>
+                            {day18 && <div className="space-y-5 px-6 py-6 text-gray-700 leading-relaxed">
+
+                                <p>
+                                    Transfer to Yala: Approx. 2-hour drive.
+                                </p>
+
+                                <p>
+                                    Evening Safari at Yala: Jeep safari to spot leopards, elephants, and exotic bird species.
+                                </p>
+
+                                <p className="font-semibold text-[#0A3A5E]">
+                                    Overnight stay in Yala.
+                                </p>
+
+                            </div>
+                            }
+                        </div>
+
+                        {/* ================= DAY 19 ================= */}
+                        <div data-aos="fade-up" data-aos-delay="300" className="overflow-hidden rounded-lg border bg-white shadow">
+                            <button onClick={() => setDay19(!day19)} className="flex w-full items-center justify-between bg-gray-100 px-6 py-5 text-left font-semibold text-[#0A3A5E]">
+                                <span>Day 19: Yala to Bentota via South Coast Sightseeing</span>
+                                <span>{day19 ? "−" : "+"}</span>
+                            </button>
+                            {day19 && <div className="space-y-5 px-6 py-6 text-gray-700 leading-relaxed">
+
+                                <p>
+                                    Early Morning: Breakfast and check-out.
+                                </p>
+
+                                <p>
+                                    Scenic Drive with South Coast Sightseeing.
+                                </p>
+
+                                <p>
+                                    Mirissa Beach: Relax or go for seasonal whale watching.
+                                </p>
+
+                                <p>
+                                    Weligama: View iconic stilt fishermen.
+                                </p>
+
+                                <p>
+                                    Galle Fort: Explore the UNESCO-listed fort with colonial architecture and local shops.
+                                </p>
+
+                                <p>
+                                    Sea Turtle Hatchery in Kosgoda: Learn about turtle conservation and see baby turtles.
+                                </p>
+
+                                <p className="font-semibold text-[#0A3A5E]">
+                                    Overnight stay in Bentota.
+                                </p>
+
+                            </div>
+                            }
+                        </div>
+
+                        {/* ================= DAY 20 ================= */}
+                        <div data-aos="fade-up" data-aos-delay="300" className="overflow-hidden rounded-lg border bg-white shadow">
+                            <button onClick={() => setDay20(!day20)} className="flex w-full items-center justify-between bg-gray-100 px-6 py-5 text-left font-semibold text-[#0A3A5E]">
+                                <span>Day 20: Relax in Bentota & Madu River Safari</span>
+                                <span>{day20 ? "−" : "+"}</span>
+                            </button>
+                            {day20 && <div className="space-y-5 px-6 py-6 text-gray-700 leading-relaxed">
+
+                                <p>
+                                    Morning at Bentota Beach: Relax or try optional water sports.
+                                </p>
+
+                                <p>
+                                    Madu River Safari: Boat tour through mangroves, visit an island temple, and experience a local fish spa (approx. 1.5-hour tour).
+                                </p>
+
+                                <p className="font-semibold text-[#0A3A5E]">
+                                    Overnight stay in Bentota.
+                                </p>
+
+                            </div>
+                            }
+                        </div>
+
+                        {/* ================= DAY 21 ================= */}
+                        <div data-aos="fade-up" data-aos-delay="300" className="overflow-hidden rounded-lg border bg-white shadow">
+                            <button onClick={() => setDay21(!day21)} className="flex w-full items-center justify-between bg-gray-100 px-6 py-5 text-left font-semibold text-[#0A3A5E]">
+                                <span>Day 21: Departure from Colombo</span>
+                                <span>{day21 ? "−" : "+"}</span>
+                            </button>
+                            {day21 && <div className="space-y-5 px-6 py-6 text-gray-700 leading-relaxed">
+
+                                <p>
+                                    Transfer to Colombo Airport: Approx. 1.5-hour drive.
+                                </p>
+
+                            </div>
+                            }
+                        </div>
+
+                    </div>
+                </div>
+            </section>
+
+            {/* ================= ROUTE MAP ================= */}
+            <section className="bg-white -py-2">
+                <div className="mx-auto max-w-7xl px-6">
+
+                    <div
+                        className="ch-left mx-auto max-w-5xl"
+                        data-aos="fade-right"
+                    >
+                        <h1
+                            data-aos="fade-up"
+                            className="mb-6 text-center text-3xl sm:text-4xl md:text-5xl lg:text-4xl font-extrabold leading-tight"
+                        >
+                            Route
+                        </h1>
+
+                        <div className="flex flex-col lg:flex-row gap-6">
+
+                            {/* Map */}
+                            <div className="map-container flex-1 overflow-hidden rounded-xl shadow-xl border">
+                                <iframe
+                                    width="100%"
+                                    height="450"
+                                    style={{ border: 0 }}
+                                    loading="lazy"
+                                    allowFullScreen
+                                    src="https://www.google.com/maps/embed/v1/directions?key=AIzaSyBjUk_Sn0lthNO_cpZO9n5hI1lmZPRUB0E&origin=Colombo,Sri+Lanka&destination=Colombo,Sri+Lanka&waypoints=Negombo,Sri+Lanka|Wilpattu+National+Park,Sri+Lanka|Anuradhapura,Sri+Lanka|Jaffna,Sri+Lanka|Trincomalee,Sri+Lanka|Pasikuda,Sri+Lanka|Sigiriya,Sri+Lanka|Dambulla,Sri+Lanka|Kandy,Sri+Lanka|Nuwara+Eliya,Sri+Lanka|Ella,Sri+Lanka|Yala+National+Park,Sri+Lanka|Bentota,Sri+Lanka&avoid=tolls|highways"
+                                ></iframe>
+                            </div>
+
+                            {/* Route Info */}
+                            <div className="route-info w-full h-[100px] lg:w-[300px] flex flex-col items-start gap-3 rounded-lg bg-gray-100 p-5 text-lg shadow">
+                                <p><strong>Distance:</strong> 1,804 km</p>
+                                <p><strong>Duration:</strong> 51 hr</p>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+            </section>
+
+            {/* ================= IMPORTANT INFO + CTA ================= */}
+            <section className="bg-white py-10">
+                <div className="mx-auto max-w-7xl px-6">
+
+                    {/* Important Points */}
+                    <div data-aos="fade-up" className="mx-auto max-w-4xl">
+                        <h3 className="mb-6 text-center text-2xl font-bold text-[#0A3A5E]">
+                            Important points to note
+                        </h3>
+
+                        <ul className="space-y-4 text-gray-700">
+                            <li className="flex items-start gap-3">
+                                <span className="mt-1 text-[#0A3A5E]">◆</span>
+                                <p>
+                                    After making the payment, any booking cannot be cancelled.
+                                    Hence, once the payment is made it will not be refunded.
+                                </p>
+                            </li>
+
+                            <li className="flex items-start gap-3">
+                                <span className="mt-1 text-[#0A3A5E]">◆</span>
+                                <p>
+                                    Additional services and excursions that are optional may be provided,
+                                    though for an additional charge.
+                                </p>
+                            </li>
+
+                            <li className="flex items-start gap-3">
+                                <span className="mt-1 text-[#0A3A5E]">◆</span>
+                                <p>
+                                    The official check-in time at all hotels is at 12:00 pm.
+                                </p>
+                            </li>
+
+                            <li className="flex items-start gap-3">
+                                <span className="mt-1 text-[#0A3A5E]">◆</span>
+                                <p>
+                                    The official check-out time at all hotels is at 11:00 am.
+                                </p>
+                            </li>
+
+                            <li className="flex items-start gap-3">
+                                <span className="mt-1 text-[#0A3A5E]">◆</span>
+                                <p>
+                                    Visits to wildlife parks will be at one’s own risk. Jeeps and vehicles
+                                    available here are without air conditioning and come with basic insurance
+                                    covers (not comprehensive as in the case of vehicles used for our tours).
+                                </p>
+                            </li>
+                        </ul>
+                    </div>
+
+                    {/* CTA Box */}
+                    <div
+                        data-aos="zoom-in"
+                        className="mt-10 w-full rounded-lg bg-gray-100 px-6 py-10 text-center shadow"
+                    >
+                        <h2 className="mb-6 text-xl sm:text-2xl font-semibold text-gray-800">
+                            Experience your dream holiday in Sri Lanka!
+                        </h2>
+
+                        <button
+                            onClick={() => navigate(`/book-now`)}
+                            className="rounded-full bg-[#00A9C7] px-10 py-3 text-white font-semibold transition hover:bg-[#008eaa]">
+                            BEGIN YOUR JOURNEY
+                        </button>
+                    </div>
+
+                    {/* Related Destinations */}
+                    <div data-aos="fade-up" className="mt-10 text-left">
+                        <h3 className="mb-6 text-xl font-bold text-gray-700">
+                            RELATED DESTINATIONS
+                        </h3>
+
+                        <div className="flex flex-wrap justify-start gap-3">
+                            {[
+                                "Colombo",
+                                "Negombo",
+                                "Wilpattu National Park",
+                                "Anuradhapura",
+                                "Jaffna",
+                                "Trincomalee",
+                                "Pigeon Island",
+                                "Pasikuda",
+                                "Sigiriya",
+                                "Kandy",
+                                "Dambulla",
+                                "Nuwara Eliya",
+                                "Ella",
+                                "Yala National Park",
+                                "Bentota",
+                                "Madu River"
+                            ].map((place, i) => (
+                                <span
+                                    key={i}
+                                    className="rounded-full bg-gray-200 px-5 py-2 text-sm font-medium text-gray-700 transition hover:bg-[#0A3A5E] hover:text-white cursor-pointer"
+                                >
+                                    {place}
+                                </span>
+                            ))}
+                        </div>
+                    </div>
+
+                </div>
+            </section>
+
+            {/* ================= WHATSAPP ================= */}
+            <a
+                href="https://wa.me/94742723210"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="fixed bottom-5 right-5 z-50"
+            >
+                <img
+                    src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6b/WhatsApp.svg/512px-WhatsApp.svg.png"
+                    alt="WhatsApp"
+                    className="h-12 w-12 rounded-full shadow-lg transition hover:scale-110 sm:h-14 sm:w-14"
+                />
+            </a>
+
+        </div>
+    );
+}
+
+export default Days21Tour;

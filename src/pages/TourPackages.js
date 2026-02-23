@@ -59,34 +59,40 @@ function TourPackages() {
 
                         {[
                             {
-                                title: "21-Day Sri Lanka Grand Tour",
-                                desc: "This 21-day Sri Lanka Grand Tour immerses you in the island’s stunning landscapes, rich history, and vibrant culture.",
+                                title: "21 Days of Sri Lanka Grand Tour",
+                                desc: "This 21-Day Sri Lanka Grand Tour immerses you in the island’s stunning landscapes, rich history, and vibrant culture.",
                                 img: pkg1,
+                                slug: "21-days-grand-tour",
                             },
                             {
-                                title: "15-Days Sri Lanka Tour",
+                                title: "15 Days of Sri Lanka Tour",
                                 desc: "Embark on a captivating 15-day journey across Sri Lanka’s most iconic destinations.",
                                 img: pkg2,
+                                slug: "15-days-tour",
                             },
                             {
-                                title: "8 – Days Sri Lanka Tour",
+                                title: "8 Days of Sri Lanka Tour",
                                 desc: "Embark on an unforgettable 8-day journey through the vibrant landscapes and rich cultural heritage of Sri Lanka.",
                                 img: pkg3,
+                                slug: "8-days-tour",
                             },
                             {
-                                title: "5-Day Sri Lanka Tour",
+                                title: "5 Days of Sri Lanka Tour",
                                 desc: "Discover the enchanting beauty and rich heritage of Sri Lanka on this 5-day adventure.",
                                 img: pkg4,
+                                slug: "5-days-tour",
                             },
                             {
-                                title: "7-Day Sri Lanka Tour",
+                                title: "7 Days of Sri Lanka Tour",
                                 desc: "This 7-day journey showcases the best of Sri Lanka’s cultural, scenic, and wildlife attractions.",
                                 img: pkg5,
+                                slug: "7-days-tour",
                             },
                             {
-                                title: "10-Day Sri Lanka Tour",
+                                title: "10 Days of Sri Lanka Tour",
                                 desc: "Embark on a captivating 10-day journey through the heart of Sri Lanka.",
                                 img: pkg6,
+                                slug: "10-days-tour",
                             },
                         ].map((tour, index) => (
                             <div
@@ -115,7 +121,7 @@ function TourPackages() {
                                     </p>
 
                                     <button
-                                        onClick={() => navigate("/tour-details")}
+                                        onClick={() => navigate(`/tour-packages/${tour.slug}`)}
                                         className="mt-4 text-teal-600 font-medium hover:underline"
                                     >
                                         Read More »
@@ -150,7 +156,7 @@ function TourPackages() {
                             </h2>
 
                             <button
-                                onClick={() => navigate("/contact")}
+                                onClick={() => navigate("/book-now")}
                                 className="mt-8 bg-[#ff5a4e] hover:bg-[#e0483d] transition px-8 py-3 rounded-lg text-sm font-semibold tracking-wide"
                             >
                                 BOOK YOUR ADVENTURE

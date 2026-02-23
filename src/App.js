@@ -39,6 +39,12 @@ import ArugamBay from "./pages/destinations/ArugamBay";
 import Kandy from "./pages/destinations/Kandy";
 import Polonnaruwa from "./pages/destinations/Polonnaruwa";
 import Katharagama from "./pages/destinations/Katharagama";
+import Days21Tour from "./pages/tourPackages/Days21Tour";
+import BookNow from "./pages/BookNow";
+import Days15Tour from "./pages/tourPackages/Days15Tour";
+import Days8Tour from "./pages/tourPackages/Days8Tour";
+import Days5Tour from "./pages/tourPackages/Days5Tour";
+import Days7Tour from "./pages/tourPackages/Days7Tour";
 
 function App() {
     return (
@@ -49,12 +55,20 @@ function App() {
                 <Route path="/" element={<Home />} />
                 <Route path="/about" element={<About />} />
                 <Route path="/contact" element={<Contact />} />
+                <Route path="/book-now" element={<BookNow />} />
                 <Route path="/terms-condition" element={<TermsAndCondition />} />
                 <Route path="/privacy-policy" element={<PrivacyPolicy />} />
 
                 <Route path="/tour-packages" element={<TourPackages />} />
                 <Route path="/gallery" element={<Gallery />} />
                 <Route path="/destinations" element={<Destinations />} />
+
+                {/* Tour Packages */}
+                <Route path="/tour-packages/21-days-grand-tour" element={<Days21Tour />} />
+                <Route path="/tour-packages/15-days-tour" element={<Days15Tour />} />
+                <Route path="/tour-packages/8-days-tour" element={<Days8Tour />} />
+                <Route path="/tour-packages/5-days-tour" element={<Days5Tour />} />
+                <Route path="/tour-packages/7-days-tour" element={<Days7Tour />} />
 
                 {/* destinations */}
                 <Route path="/destinations/colombo" element={<Colombo />} />

@@ -529,15 +529,17 @@ function Home() {
               </div>
 
               <h3 className="text-xl font-semibold mt-5">
-                21-Day Sri Lanka Grand Tour
+                21 Days of Sri Lanka Grand Tour
               </h3>
 
               <p className="text-gray-600 text-sm mt-2 leading-relaxed">
-                This 21-day Sri Lanka Grand Tour immerses you in the island’s stunning
+                This 21-Day Sri Lanka Grand Tour immerses you in the island’s stunning
                 landscapes, rich history, and vibrant culture.
               </p>
 
-              <button className="mt-4 bg-[#1d4ed8] text-white px-5 py-2 rounded-md text-sm hover:bg-[#1e40af] transition">
+              <button
+                onClick={() => navigate("/tour-packages/21-days-grand-tour")}
+                className="mt-4 bg-[#1d4ed8] text-white px-5 py-2 rounded-md text-sm hover:bg-[#1e40af] transition">
                 Read More →
               </button>
             </div>
@@ -552,7 +554,7 @@ function Home() {
               </div>
 
               <h3 className="text-xl font-semibold mt-5">
-                15-Days Sri Lanka Tour
+                15 Days of Sri Lanka Tour
               </h3>
 
               <p className="text-gray-600 text-sm mt-2 leading-relaxed">
@@ -560,7 +562,9 @@ function Home() {
                 destinations.
               </p>
 
-              <button className="mt-4 bg-[#1d4ed8] text-white px-5 py-2 rounded-md text-sm hover:bg-[#1e40af] transition">
+              <button
+                onClick={() => navigate("/tour-packages/15-days-tour")}
+                className="mt-4 bg-[#1d4ed8] text-white px-5 py-2 rounded-md text-sm hover:bg-[#1e40af] transition">
                 Read More →
               </button>
             </div>
@@ -575,7 +579,7 @@ function Home() {
               </div>
 
               <h3 className="text-xl font-semibold mt-5">
-                8 – Days Sri Lanka Tour
+                8 Days of Sri Lanka Tour
               </h3>
 
               <p className="text-gray-600 text-sm mt-2 leading-relaxed">
@@ -583,7 +587,9 @@ function Home() {
                 landscapes and rich cultural heritage.
               </p>
 
-              <button className="mt-4 bg-[#1d4ed8] text-white px-5 py-2 rounded-md text-sm hover:bg-[#1e40af] transition">
+              <button
+                onClick={() => navigate("/tour-packages/8-days-tour")}
+                className="mt-4 bg-[#1d4ed8] text-white px-5 py-2 rounded-md text-sm hover:bg-[#1e40af] transition">
                 Read More →
               </button>
             </div>
@@ -1021,7 +1027,7 @@ function Home() {
               </h2>
 
               <button
-                onClick={() => navigate("/contact")}
+                onClick={() => navigate("/book-now")}
                 className="mt-8 bg-[#ff5a4e] hover:bg-[#e0483d] transition px-8 py-3 rounded-lg text-sm font-semibold tracking-wide"
               >
                 BOOK YOUR ADVENTURE

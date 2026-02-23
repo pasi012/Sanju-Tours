@@ -60,10 +60,10 @@ export default function Navbar() {
           {/* Right Side */}
           <div className="hidden lg:flex items-center justify-end">
             <Link
-              to="/contact"
+              to="/book-now"
               className="rounded-full bg-[#00c8ff] px-6 py-2 text-sm font-semibold text-black hover:bg-white transition"
             >
-              CONTACT US
+              BOOK NOW
             </Link>
           </div>
 
@@ -89,6 +89,7 @@ export default function Navbar() {
               ["DESTINATIONS", "/destinations"],
               ["ABOUT US", "/about"],
               ["CONTACT US", "/contact"],
+              ["BOOK NOW", "/book-now"],
             ].map(([label, path]) => (
               <li key={label}>
                 <Link
