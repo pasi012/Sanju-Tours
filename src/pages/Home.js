@@ -302,7 +302,7 @@ function Home() {
       rating: 5,
       title: "An Unforgettable Experience!",
       text:
-        "Booking our trip through Ravi Tour and Travels was the best decision we made! The team curated a beautiful itinerary for us in Kerala, and every detail was handled professionally. Can’t wait to travel with them again!",
+        "Booking our trip through Sanju Tours was the best decision we made! The team curated a beautiful itinerary for us in Kerala, and every detail was handled professionally. Can’t wait to travel with them again!",
     },
     {
       name: "Rajesh Kumar",
@@ -310,7 +310,7 @@ function Home() {
       rating: 5,
       title: "Perfectly Organized, Memorable Trip",
       text:
-        "Ravi Tour and Travels truly made our dream vacation come true. From exploring ancient sites to scenic train rides, everything was flawless and stress-free.",
+        "Sanju Tours truly made our dream vacation come true. From exploring ancient sites to scenic train rides, everything was flawless and stress-free.",
     },
     {
       name: "Sneha & Vivek",
@@ -685,7 +685,7 @@ function Home() {
             <div className="mt-3 w-20 sm:w-24 h-[3px] bg-[#0ea5a4] rounded-full" />
 
             <p className="mt-5 text-gray-600 leading-relaxed text-sm sm:text-base">
-              At Ravi Tour and Travels, we see travel as more than a journey—it’s a
+              At Sanju Tours, we see travel as more than a journey—it’s a
               chance to explore, learn, and make lasting memories. From tailored tour
               packages to dependable cab services, we’re committed to delivering
               seamless travel experiences.
@@ -882,11 +882,11 @@ function Home() {
 
           {/* Title */}
           <h2 className="text-3xl md:text-4xl font-semibold text-gray-900 mb-4">
-            Ravi Tour and Travels
+            Sanju Tours
           </h2>
 
           <p className="max-w-3xl mx-auto text-gray-600 text-sm md:text-base mb-16">
-            Ravi Tour and Travels offers a range of comfortable, reliable vehicles for all your
+            Sanju Tours offers a range of comfortable, reliable vehicles for all your
             travel needs across Sri Lanka, ensuring a smooth and enjoyable journey through
             vibrant cities, scenic landscapes, and hidden gems.
           </p>

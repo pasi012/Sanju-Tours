@@ -118,7 +118,7 @@ function DamroTeaEstate() {
 
             {/* ================= WHATSAPP ================= */}
             <a
-                href="https://wa.me/94743412910"
+                href="https://wa.me/94742723210"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="fixed bottom-5 right-5 z-50"

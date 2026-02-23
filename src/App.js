@@ -25,6 +25,20 @@ import AdamsPeak from "./pages/destinations/AdamsPeak";
 import Kalmunai from "./pages/destinations/Kalmunai";
 import Negombo from "./pages/destinations/Negombo";
 import Tangalle from "./pages/destinations/Tangalle";
+import Pinnawala from "./pages/destinations/Pinnawala";
+import Jaffna from "./pages/destinations/Jaffna";
+import DiyalumaFalls from "./pages/destinations/DiyalumaFalls";
+import Trincomalee from "./pages/destinations/Trincomalee";
+import Mirissa from "./pages/destinations/Mirissa";
+import Anuradhapura from "./pages/destinations/Anuradhapura";
+import Hikkaduwa from "./pages/destinations/Hikkaduwa";
+import Yala from "./pages/destinations/Yala";
+import Galle from "./pages/destinations/Galle";
+import Udawalawe from "./pages/destinations/Udawalawe";
+import ArugamBay from "./pages/destinations/ArugamBay";
+import Kandy from "./pages/destinations/Kandy";
+import Polonnaruwa from "./pages/destinations/Polonnaruwa";
+import Katharagama from "./pages/destinations/Katharagama";
 
 function App() {
     return (
@@ -56,6 +70,20 @@ function App() {
                 <Route path="/destinations/kalmunai" element={<Kalmunai />} />
                 <Route path="/destinations/negombo" element={<Negombo />} />
                 <Route path="/destinations/tangalle" element={<Tangalle />} />
+                <Route path="/destinations/pinnawala" element={<Pinnawala />} />
+                <Route path="/destinations/jaffna" element={<Jaffna />} />
+                <Route path="/destinations/diyaluma-falls" element={<DiyalumaFalls />} />
+                <Route path="/destinations/trincomalee" element={<Trincomalee />} />
+                <Route path="/destinations/mirissa" element={<Mirissa />} />
+                <Route path="/destinations/anuradhapura" element={<Anuradhapura />} />
+                <Route path="/destinations/hikkaduwa" element={<Hikkaduwa />} />
+                <Route path="/destinations/yala" element={<Yala />} />
+                <Route path="/destinations/galle" element={<Galle />} />
+                <Route path="/destinations/udawalawe" element={<Udawalawe />} />
+                <Route path="/destinations/arugam-bay" element={<ArugamBay/>} />
+                <Route path="/destinations/kandy" element={<Kandy/>} />
+                <Route path="/destinations/polonnaruwa" element={<Polonnaruwa/>} />
+                <Route path="/destinations/katharagama" element={<Katharagama/>} />
                 
             </Routes>
             <Footer />

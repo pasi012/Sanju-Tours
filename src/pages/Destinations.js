@@ -172,11 +172,11 @@ function Destinations() {
                 "Mirissa is one of the most popular beach destinations in southern Sri Lanka and for a good reason! The area...",
         },
         {
-            id: "galleface",
+            id: "kandy",
             img: place16,
-            title: "Galle Face",
+            title: "Kandy",
             desc:
-                "Sri Lanka’s version of LA’s Venice Beach isn’t the place to get away from it all, but it is the...",
+                "Kandy is a scenic city in central Sri Lanka, famous for the Temple of the Tooth, lush hills, and vibrant cultural festivals...",
         },
         {
             id: "anuradhapura",
@@ -188,14 +188,14 @@ function Destinations() {
         {
             id: "hikkaduwa",
             img: place18,
-            title: "Hikkaduwa Beach",
+            title: "Hikkaduwa",
             desc:
                 "Only 90 minutes from Colombo, this beach is all about water sports, surfing, bodyboarding, snorkeling, and scuba diving. All the...",
         },
         {
             id: "yala",
             img: place19,
-            title: "Yala National Park",
+            title: "Yala",
             desc:
                 "Located on the island’s southeast coast, this national park is known for leopard safaris. Leopards are very rare, but the...",
         },
@@ -209,7 +209,7 @@ function Destinations() {
         {
             id: "udawalawe",
             img: place21,
-            title: "Udawalawe National Park",
+            title: "Udawalawe",
             desc:
                 "This large wildlife park is in the southern part of the country, about an hour’s drive from the city of...",
         },
