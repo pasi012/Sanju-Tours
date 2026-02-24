@@ -45,6 +45,7 @@ import Days15Tour from "./pages/tourPackages/Days15Tour";
 import Days8Tour from "./pages/tourPackages/Days8Tour";
 import Days5Tour from "./pages/tourPackages/Days5Tour";
 import Days7Tour from "./pages/tourPackages/Days7Tour";
+import Days10Tour from "./pages/tourPackages/Days10Tour";
 
 function App() {
     return (
@@ -69,6 +70,7 @@ function App() {
                 <Route path="/tour-packages/8-days-tour" element={<Days8Tour />} />
                 <Route path="/tour-packages/5-days-tour" element={<Days5Tour />} />
                 <Route path="/tour-packages/7-days-tour" element={<Days7Tour />} />
+                <Route path="/tour-packages/10-days-tour" element={<Days10Tour />} />
 
                 {/* destinations */}
                 <Route path="/destinations/colombo" element={<Colombo />} />

@@ -83,7 +83,7 @@ function Days5Tour() {
                             <span className="text-3xl">📅</span>
                             <div className="text-left">
                                 <p className="text-sm uppercase tracking-widest">Duration</p>
-                                <p className="text-xl font-bold">5 Days</p>
+                                <p className="text-xl font-bold">5 Days / 4 Nights</p>
                             </div>
                         </div>
                     </div>

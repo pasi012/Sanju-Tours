@@ -4,14 +4,14 @@ import "aos/dist/aos.css";
 
 import { useNavigate } from "react-router-dom";
 
-import aboutHero from "../../assets/NuwaraEliya1.jpg";
+import aboutHero from "../../assets/Mirissa1.jpg";
 
-import dhamma from "../../assets/Kithulgala1.jpg";
-import sigiriya from "../../assets/Pinnawala2.jpg";
-import kandy from "../../assets/kandy.jpg";
-import temple from "../../assets/sigiriya.jpg";
+import dhamma from "../../assets/Anuradhapura1.jpg";
+import sigiriya from "../../assets/wilpaththu.jpg";
+import kandy from "../../assets/galle.jpg";
+import temple from "../../assets/Tangalle2.jpg";
 
-function Days8Tour() {
+function Days10Tour() {
 
     const navigate = useNavigate();
 
@@ -27,6 +27,8 @@ function Days8Tour() {
     const [day6, setDay6] = useState(false);
     const [day7, setDay7] = useState(false);
     const [day8, setDay8] = useState(false);
+    const [day9, setDay9] = useState(false);
+    const [day10, setDay10] = useState(false);
 
     useEffect(() => {
         AOS.init({ duration: 1000, once: true });
@@ -48,7 +50,7 @@ function Days8Tour() {
                         data-aos="fade-up"
                         className="text-3xl sm:text-4xl md:text-5xl lg:text-4xl font-extrabold leading-tight"
                     >
-                        8 Days of Sri Lanka Tour
+                        10 Days of Sri Lanka Tour
                     </h1>
                     <p
                         data-aos="fade-up"
@@ -69,13 +71,9 @@ function Days8Tour() {
                         data-aos-delay="150"
                         className="mx-auto mt-6 max-w-4xl text-gray-600 leading-relaxed"
                     >
-                        Embark on an unforgettable 8-day journey through the vibrant landscapes and rich cultural heritage of Sri Lanka. This tour begins in Negombo, where you’ll relax on beautiful beaches before heading to Pinnawala to witness the majestic elephants at the Elephant Orphanage. Explore the ancient Dambulla Cave Temple and climb the iconic Sigiriya Rock Fortress, where breathtaking views await you.
+                        Embark on a captivating 10-day journey through the heart of Sri Lanka, beginning with the vibrant coastal town of Negombo. Experience a thrilling safari in Wilpattu National Park, and explore the ancient city of Anuradhapura, home to sacred Buddhist sites. Climb the iconic Sigiriya Rock Fortress and immerse yourself in the rich culture of Kandy, including a traditional Kandyan cultural show.
 
-                        Immerse yourself in the charm of Kandy, home to the Temple of the Sacred Tooth Relic and stunning botanical gardens. Experience the lively Kandyan Cultural Show, showcasing traditional dances and drumming.
-
-                        Travel through lush tea plantations to Nuwara Eliya, where you can enjoy the serenity of Gregory Lake. Adventure awaits in Kitulgala, known for its thrilling white-water rafting on the Kelani River. Finally, unwind on the sandy shores of Bentota, where you can relax or partake in water sports.
-
-                        This tour is ideal for travelers seeking a perfect blend of culture, adventure, and relaxation, showcasing the best of Sri Lanka’s natural beauty and traditions.
+                        Enjoy the scenic beauty of Nuwara Eliya with its lush tea plantations before heading south to relax on the stunning beaches of Galle or Mirissa. This tour combines cultural heritage, breathtaking landscapes, and unforgettable experiences, perfect for travelers seeking a diverse Sri Lankan adventure.
                     </p>
 
                     {/* Duration Bar */}
@@ -88,7 +86,7 @@ function Days8Tour() {
                             <span className="text-3xl">📅</span>
                             <div className="text-left">
                                 <p className="text-sm uppercase tracking-widest">Duration</p>
-                                <p className="text-xl font-bold">8 Days / 7 Nights</p>
+                                <p className="text-xl font-bold">10 Days / 9 Nights</p>
                             </div>
                         </div>
                     </div>
@@ -177,7 +175,7 @@ function Days8Tour() {
                                 onClick={() => setDay2(!day2)}
                                 className="flex w-full items-center justify-between bg-gray-100 px-6 py-5 text-left font-semibold text-[#0A3A5E]"
                             >
-                                <span>Day 2: Negombo to Pinnawala & Dambulla</span>
+                                <span>Day 2: Negombo to Wilpattu (Safari) & Anuradhapura</span>
                                 <span>{day2 ? "−" : "+"}</span>
                             </button>
 
@@ -188,26 +186,26 @@ function Days8Tour() {
                                     </p>
 
                                     <p>
-                                        Transfer to Pinnawala: Approx. 1.5-hour drive.
+                                        Transfer to Wilpattu: Approx. 2-hour drive.
                                     </p>
 
                                     <p>
-                                        Pinnawala Elephant Orphanage: Visit the orphanage to see elephants and learn about their conservation. (Visit duration: approx. 2 hours)
+                                        Wilpattu National Park Safari: Morning jeep safari to spot leopards and other wildlife. (Safari duration: approx. 3 hours)
                                     </p>
 
                                     <p>
-                                        Lunch in Pinnawala.
+                                        Transfer to Anuradhapura: Approx. 1-hour drive.
                                     </p>
 
                                     <p>
-                                        Transfer to Dambulla: Approx. 1-hour drive.
+                                        Lunch in Anuradhapura.
                                     </p>
 
                                     <p>
-                                        Dambulla Cave Temple: Explore the ancient rock temple with stunning murals and statues. (Visit duration: approx. 1.5 hours)
+                                        Explore Anuradhapura: Visit sacred sites such as the Sri Maha Bodhi tree and ancient stupas. (Visit duration: approx. 3 hours)
                                     </p>
 
-                                    <p className="font-semibold">Overnight stay in Dambulla / Sigiriya.</p>
+                                    <p className="font-semibold">Overnight stay in Anuradhapura.</p>
 
                                 </div>
                             )}
@@ -223,7 +221,7 @@ function Days8Tour() {
                                 onClick={() => setDay3(!day3)}
                                 className="flex w-full items-center justify-between bg-gray-100 px-6 py-5 text-left font-semibold text-[#0A3A5E]"
                             >
-                                <span>Day 3: Dambulla to Sigiriya & Transfer to Kandy</span>
+                                <span>Day 3: Explore Anuradhapura</span>
                                 <span>{day3 ? "−" : "+"}</span>
                             </button>
 
@@ -235,19 +233,19 @@ function Days8Tour() {
                                     </p>
 
                                     <p>
-                                        Sigiriya Rock Fortress: Climb the Lion Rock for breathtaking views and explore ancient frescoes. (Visit duration: approx. 3 hours)
+                                        Full Day in Anuradhapura: Continue exploring ancient ruins and temples, including the Ruwanwelisaya stupa and the Isurumuniya Temple. (Visit duration: flexible)
                                     </p>
 
                                     <p>
-                                        Lunch in Sigiriya.
+                                        Lunch in Anuradhapura.
                                     </p>
 
                                     <p>
-                                        Transfer to Kandy: Approx. 2.5-hour drive.
+                                        Visit Local Markets: Experience local culture and cuisine.
                                     </p>
 
                                     <p className="font-semibold text-[#0A3A5E]">
-                                        Overnight stay in Kandy.
+                                        Overnight stay in Anuradhapura.
                                     </p>
 
                                 </div>
@@ -257,13 +255,53 @@ function Days8Tour() {
                         {/* ================= DAY 4 ================= */}
                         <div data-aos="fade-up" data-aos-delay="300" className="overflow-hidden rounded-lg border bg-white shadow">
                             <button onClick={() => setDay4(!day4)} className="flex w-full items-center justify-between bg-gray-100 px-6 py-5 text-left font-semibold text-[#0A3A5E]">
-                                <span>Day 4: Explore Kandy</span>
+                                <span>Day 4: Anuradhapura to Sigiriya</span>
                                 <span>{day4 ? "−" : "+"}</span>
                             </button>
                             {day4 && <div className="space-y-5 px-6 py-6 text-gray-700 leading-relaxed">
 
                                 <p>
-                                    Breakfast at Hotel.
+                                    Breakfast and Check Out.
+                                </p>
+
+                                <p>
+                                    Transfer to Sigiriya: Approx. 2.5-hour drive.
+                                </p>
+
+                                <p>
+                                    Sigiriya Rock Fortress: Climb the Lion Rock for breathtaking views and explore ancient frescoes. (Visit duration: approx. 3 hours)
+                                </p>
+
+                                <p>
+                                    Lunch in Sigiriya.
+                                </p>
+
+                                <p>
+                                    Optional Village Tour: Experience traditional village life.
+                                </p>
+
+                                <p className="font-semibold text-[#0A3A5E]">
+                                    Overnight stay in Sigiriya.
+                                </p>
+
+                            </div>
+                            }
+                        </div>
+
+                        {/* ================= DAY 5 ================= */}
+                        <div data-aos="fade-up" data-aos-delay="300" className="overflow-hidden rounded-lg border bg-white shadow">
+                            <button onClick={() => setDay5(!day5)} className="flex w-full items-center justify-between bg-gray-100 px-6 py-5 text-left font-semibold text-[#0A3A5E]">
+                                <span>Day 5: Sigiriya to Kandy</span>
+                                <span>{day5 ? "−" : "+"}</span>
+                            </button>
+                            {day5 && <div className="space-y-5 px-6 py-6 text-gray-700 leading-relaxed">
+
+                                <p>
+                                    Breakfast and Check Out.
+                                </p>
+
+                                <p>
+                                    Transfer to Kandy: Approx. 2.5-hour drive.
                                 </p>
 
                                 <p>
@@ -290,24 +328,52 @@ function Days8Tour() {
                             }
                         </div>
 
-                        {/* ================= DAY 5 ================= */}
+                        {/* ================= DAY 6 ================= */}
                         <div data-aos="fade-up" data-aos-delay="300" className="overflow-hidden rounded-lg border bg-white shadow">
-                            <button onClick={() => setDay5(!day5)} className="flex w-full items-center justify-between bg-gray-100 px-6 py-5 text-left font-semibold text-[#0A3A5E]">
-                                <span>Day 5: Kandy to Nuwara Eliya</span>
-                                <span>{day5 ? "−" : "+"}</span>
+                            <button onClick={() => setDay6(!day6)} className="flex w-full items-center justify-between bg-gray-100 px-6 py-5 text-left font-semibold text-[#0A3A5E]">
+                                <span>Day 6: Explore Kandy</span>
+                                <span>{day6 ? "−" : "+"}</span>
                             </button>
-                            {day5 && <div className="space-y-5 px-6 py-6 text-gray-700 leading-relaxed">
+                            {day6 && <div className="space-y-5 px-6 py-6 text-gray-700 leading-relaxed">
+
+                                <p>
+                                    Breakfast at Hotel.
+                                </p>
+
+                                <p>
+                                    Tea Factory Tour: Experience the tea-making process with tasting sessions. (Visit duration: approx. 1 hour)
+                                </p>
+
+                                <p>
+                                    Explore Kandy City: Free time for shopping or visiting local markets.
+                                </p>
+
+                                <p className="font-semibold text-[#0A3A5E]">
+                                    Overnight stay in Kandy.
+                                </p>
+
+                            </div>
+                            }
+                        </div>
+
+                        {/* ================= DAY 7 ================= */}
+                        <div data-aos="fade-up" data-aos-delay="300" className="overflow-hidden rounded-lg border bg-white shadow">
+                            <button onClick={() => setDay7(!day7)} className="flex w-full items-center justify-between bg-gray-100 px-6 py-5 text-left font-semibold text-[#0A3A5E]">
+                                <span>Day 7: Kandy to Nuwara Eliya</span>
+                                <span>{day7 ? "−" : "+"}</span>
+                            </button>
+                            {day7 && <div className="space-y-5 px-6 py-6 text-gray-700 leading-relaxed">
 
                                 <p>
                                     Breakfast and Check Out.
                                 </p>
 
                                 <p>
-                                    Tea Plantation and Factory Tour: Learn about the tea-making process and enjoy a tasting session. (Visit duration: approx. 1 hour)
+                                    Transfer to Nuwara Eliya: Approx. 2-hour scenic drive through hill country.
                                 </p>
 
                                 <p>
-                                    Transfer to Nuwara Eliya: Approx. 2-hour scenic drive through the hill country.
+                                    Visit a Tea Plantation: Learn about tea production and enjoy tasting. (Visit duration: approx. 1 hour)
                                 </p>
 
                                 <p>
@@ -322,84 +388,92 @@ function Days8Tour() {
                             }
                         </div>
 
-                        {/* ================= DAY 6 ================= */}
+                        {/* ================= DAY 8 ================= */}
                         <div data-aos="fade-up" data-aos-delay="300" className="overflow-hidden rounded-lg border bg-white shadow">
-                            <button onClick={() => setDay6(!day6)} className="flex w-full items-center justify-between bg-gray-100 px-6 py-5 text-left font-semibold text-[#0A3A5E]">
-                                <span>Day 6: Nuwara Eliya to Kitulgala</span>
-                                <span>{day6 ? "−" : "+"}</span>
+                            <button onClick={() => setDay8(!day8)} className="flex w-full items-center justify-between bg-gray-100 px-6 py-5 text-left font-semibold text-[#0A3A5E]">
+                                <span>Day 8: Nuwara Eliya to Galle or Mirissa</span>
+                                <span>{day8 ? "−" : "+"}</span>
                             </button>
-                            {day6 && <div className="space-y-5 px-6 py-6 text-gray-700 leading-relaxed">
-
-                                <p>
-                                    Breakfast at Hotel.
-                                </p>
-
-                                <p>
-                                    Visit to a Tea Estate: Experience the beauty of lush tea gardens. (Visit duration: approx. 1 hour)
-                                </p>
-
-                                <p>
-                                    Transfer to Kitulgala: Approx. 2-hour drive.
-                                </p>
-
-                                <p>
-                                    Optional White Water Rafting: Experience the thrill of rafting on the Kelani River (subject to water levels). (Duration: approx. 2 hours).
-                                </p>
-
-                                <p className="font-semibold text-[#0A3A5E]">
-                                    Overnight stay in Kithulgala.
-                                </p>
-
-                            </div>
-                            }
-                        </div>
-
-                        {/* ================= DAY 7 ================= */}
-                        <div data-aos="fade-up" data-aos-delay="300" className="overflow-hidden rounded-lg border bg-white shadow">
-                            <button onClick={() => setDay7(!day7)} className="flex w-full items-center justify-between bg-gray-100 px-6 py-5 text-left font-semibold text-[#0A3A5E]">
-                                <span>Day 7: Kitulgala to Bentota</span>
-                                <span>{day7 ? "−" : "+"}</span>
-                            </button>
-                            {day7 && <div className="space-y-5 px-6 py-6 text-gray-700 leading-relaxed">
+                            {day8 && <div className="space-y-5 px-6 py-6 text-gray-700 leading-relaxed">
 
                                 <p>
                                     Breakfast and Check Out.
                                 </p>
 
                                 <p>
-                                    Explore Kitulgala: Enjoy a morning nature walk or visit local attractions.
+                                    Transfer to Galle or Mirissa: Approx. 5-hour drive.
                                 </p>
 
                                 <p>
-                                    Transfer to Bentota: Approx. 2.5-hour drive.
+                                    Lunch in Galle/Mirissa.
                                 </p>
 
                                 <p>
-                                    Madu River Safari: Enjoy a boat ride along the Madu River, exploring mangroves and small islands. (Safari duration: approx. 1.5 hours)
+                                    Explore Galle Fort: Visit this UNESCO World Heritage Site with its colonial architecture and lighthouse. (Visit duration: approx. 2 hours)
                                 </p>
 
                                 <p>
-                                    Relax at Bentota Beach: Spend the afternoon enjoying the beach or optional water sports. (Relaxation duration: flexible)
+                                    Relax at the Beach: Spend the afternoon enjoying the beach in Mirissa or Galle.
                                 </p>
 
                                 <p className="font-semibold text-[#0A3A5E]">
-                                    Overnight stay in Bentota.
+                                    Overnight stay in Galle or Mirissa.
                                 </p>
 
                             </div>
                             }
                         </div>
 
-                        {/* ================= DAY 8 ================= */}
+                        {/* ================= DAY 9 ================= */}
                         <div data-aos="fade-up" data-aos-delay="300" className="overflow-hidden rounded-lg border bg-white shadow">
-                            <button onClick={() => setDay8(!day8)} className="flex w-full items-center justify-between bg-gray-100 px-6 py-5 text-left font-semibold text-[#0A3A5E]">
-                                <span>Day 8: Departure from Colombo</span>
-                                <span>{day8 ? "−" : "+"}</span>
+                            <button onClick={() => setDay9(!day9)} className="flex w-full items-center justify-between bg-gray-100 px-6 py-5 text-left font-semibold text-[#0A3A5E]">
+                                <span>Day 9: Explore the South Coast</span>
+                                <span>{day9 ? "−" : "+"}</span>
                             </button>
-                            {day8 && <div className="space-y-5 px-6 py-6 text-gray-700 leading-relaxed">
+                            {day9 && <div className="space-y-5 px-6 py-6 text-gray-700 leading-relaxed">
 
                                 <p>
-                                    Transfer to Colombo Airport for Departure: Approx. 2-hour drive.
+                                    Breakfast at Hotel.
+                                </p>
+
+                                <p>
+                                    Activities in Mirissa: Optional whale watching tour (subject to season) or relax on the beach.
+                                </p>
+
+                                <p>
+                                    Visit Unawatuna Beach: Explore the popular beach and enjoy water sports. (Visit duration: flexible)
+                                </p>
+
+                                <p>
+                                    Lunch in Mirissa/Galle.
+                                </p>
+
+                                <p>
+                                    Free Time for Exploration: Shopping or relaxing by the beach.
+                                </p>
+
+                                <p className="font-semibold text-[#0A3A5E]">
+                                    Overnight stay in Galle or Mirissa.
+                                </p>
+
+                            </div>
+                            }
+                        </div>
+
+                        {/* ================= DAY 10 ================= */}
+                        <div data-aos="fade-up" data-aos-delay="300" className="overflow-hidden rounded-lg border bg-white shadow">
+                            <button onClick={() => setDay10(!day10)} className="flex w-full items-center justify-between bg-gray-100 px-6 py-5 text-left font-semibold text-[#0A3A5E]">
+                                <span>Day 10: Departure from Colombo</span>
+                                <span>{day10 ? "−" : "+"}</span>
+                            </button>
+                            {day10 && <div className="space-y-5 px-6 py-6 text-gray-700 leading-relaxed">
+
+                                <p>
+                                    Breakfast and Check Out.
+                                </p>
+
+                                <p>
+                                    Transfer to Colombo Airport for Departure: Approx. 2.5-hour drive.
                                 </p>
 
                             </div>
@@ -435,18 +509,14 @@ function Days8Tour() {
                                     style={{ border: 0 }}
                                     loading="lazy"
                                     allowFullScreen
-                                    src="https://www.google.com/maps/embed/v1/directions?key=AIzaSyBjUk_Sn0lthNO_cpZO9n5hI1lmZPRUB0E
-                                    &origin=Colombo,Sri+Lanka
-                                    &destination=Colombo,Sri+Lanka
-                                    &waypoints=Negombo,Sri+Lanka|Pinnawala,Sri+Lanka|Dambulla,Sri+Lanka|Sigiriya,Sri+Lanka|Kandy,Sri+Lanka|Nuwara+Eliya,Sri+Lanka|Kitulgala,Sri+Lanka|Bentota,Sri+Lanka
-                                    &avoid=tolls|highways">
-                                </iframe>
+                                    src="https://www.google.com/maps/embed/v1/directions?key=AIzaSyBjUk_Sn0lthNO_cpZO9n5hI1lmZPRUB0E&origin=Colombo,Sri+Lanka&destination=Colombo,Sri+Lanka&waypoints=Negombo,Sri+Lanka|Wilpattu+National+Park,Sri+Lanka|Anuradhapura,Sri+Lanka|Sigiriya,Sri+Lanka|Kandy,Sri+Lanka|Nuwara+Eliya,Sri+Lanka|Galle,Sri+Lanka|Mirissa,Sri+Lanka&avoid=tolls|highways"
+                                ></iframe>
                             </div>
 
                             {/* Route Info */}
                             <div className="route-info w-full h-[100px] lg:w-[300px] flex flex-col items-start gap-3 rounded-lg bg-gray-100 p-5 text-lg shadow">
-                                <p><strong>Distance:</strong> 635 km</p>
-                                <p><strong>Duration:</strong> 19 hr</p>
+                                <p><strong>Distance:</strong> 915 km</p>
+                                <p><strong>Duration:</strong> 24 hr</p>
                             </div>
 
                         </div>
@@ -534,13 +604,15 @@ function Days8Tour() {
                             {[
                                 "Colombo",
                                 "Negombo",
-                                "Pinnawala",
-                                "Dambulla",
+                                "Wilpattu National Park",
+                                "Anuradhapura",
                                 "Sigiriya",
                                 "Kandy",
                                 "Nuwara Eliya",
-                                "Kitulgala",
-                                "Bentota"
+                                "Ella",
+                                "Galle",
+                                "Mirissa",
+                                "South Coast"
                             ].map((place, i) => (
                                 <span
                                     key={i}
@@ -573,4 +645,4 @@ function Days8Tour() {
     );
 }
 
-export default Days8Tour;
+export default Days10Tour;

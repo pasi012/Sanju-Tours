@@ -15,21 +15,9 @@
   </url>
 
   <url>
-    <loc>https://sanjutours.com/accommodation</loc>
-    <changefreq>weekly</changefreq>
-    <priority>0.9</priority>
-  </url>
-
-  <url>
-    <loc>https://sanjutours.com/dining</loc>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-
-  <url>
-    <loc>https://sanjutours.com/gallery</loc>
+    <loc>https://sanjutours.com/contact</loc>
     <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
+    <priority>0.8</priority>
   </url>
 
   <url>
@@ -39,41 +27,62 @@
   </url>
 
   <url>
-    <loc>https://sanjutours.com/contact</loc>
+    <loc>https://sanjutours.com/gallery</loc>
     <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-
-  <!-- Explore Pages -->
-  <url>
-    <loc>https://sanjutours.com/kalutara-bodhiya</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
+    <priority>0.7</priority>
   </url>
 
   <url>
-    <loc>https://sanjutours.com/kalutara-beach</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
+    <loc>https://sanjutours.com/destinations</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
   </url>
 
   <url>
-    <loc>https://sanjutours.com/richmond-castle</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
+    <loc>https://sanjutours.com/tour-packages</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
   </url>
 
-  <!-- Legal Pages -->
-  <url>
-    <loc>https://sanjutours.com/privacy-policy</loc>
-    <changefreq>yearly</changefreq>
-    <priority>0.3</priority>
-  </url>
+  <!-- Tour Packages -->
+  <url><loc>https://sanjutours.com/tour-packages/21-days-grand-tour</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://sanjutours.com/tour-packages/15-days-tour</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://sanjutours.com/tour-packages/8-days-tour</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://sanjutours.com/tour-packages/5-days-tour</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://sanjutours.com/tour-packages/7-days-tour</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://sanjutours.com/tour-packages/10-days-tour</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
 
-  <url>
-    <loc>https://sanjutours.com/terms-condition</loc>
-    <changefreq>yearly</changefreq>
-    <priority>0.3</priority>
-  </url>
+  <!-- Destinations -->
+  <url><loc>https://sanjutours.com/destinations/colombo</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://sanjutours.com/destinations/sigiriya</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://sanjutours.com/destinations/ella</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://sanjutours.com/destinations/kithulgala</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://sanjutours.com/destinations/battalangunduwa</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://sanjutours.com/destinations/damro-tea</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://sanjutours.com/destinations/ambuluwawa</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://sanjutours.com/destinations/pasikuda</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://sanjutours.com/destinations/nuwara-eliya</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://sanjutours.com/destinations/adam’s-peak</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://sanjutours.com/destinations/kalmunai</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://sanjutours.com/destinations/negombo</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://sanjutours.com/destinations/tangalle</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://sanjutours.com/destinations/pinnawala</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://sanjutours.com/destinations/jaffna</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://sanjutours.com/destinations/diyaluma-falls</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://sanjutours.com/destinations/trincomalee</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://sanjutours.com/destinations/mirissa</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://sanjutours.com/destinations/anuradhapura</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://sanjutours.com/destinations/hikkaduwa</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://sanjutours.com/destinations/yala</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://sanjutours.com/destinations/galle</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://sanjutours.com/destinations/udawalawe</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://sanjutours.com/destinations/arugam-bay</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://sanjutours.com/destinations/kandy</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://sanjutours.com/destinations/polonnaruwa</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://sanjutours.com/destinations/katharagama</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+
+  <!-- Legal -->
+  <url><loc>https://sanjutours.com/privacy-policy</loc><changefreq>yearly</changefreq><priority>0.3</priority></url>
+  <url><loc>https://sanjutours.com/terms-condition</loc><changefreq>yearly</changefreq><priority>0.3</priority></url>
 
 </urlset>

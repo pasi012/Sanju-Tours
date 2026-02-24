@@ -127,13 +127,19 @@ function Footer() {
 
             {/* Social Icons */}
             <div className="flex justify-center gap-5 text-lg lg:justify-start">
-              {[FaFacebookF, FaYoutube, FaInstagram, FaPinterestP].map((Icon, i) => (
-                <Icon
-                  key={i}
-                  className="cursor-pointer transition hover:text-[#1fa2ff]"
-                />
-              ))}
+              <a
+                href="https://web.facebook.com/sanju.tours"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <FaFacebookF className="cursor-pointer transition hover:text-[#1fa2ff]" />
+              </a>
+
+              <FaYoutube className="cursor-pointer transition hover:text-[#1fa2ff]" />
+              <FaInstagram className="cursor-pointer transition hover:text-[#1fa2ff]" />
+              <FaPinterestP className="cursor-pointer transition hover:text-[#1fa2ff]" />
             </div>
+
           </div>
 
         </div>

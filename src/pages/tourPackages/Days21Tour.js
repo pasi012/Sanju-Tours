@@ -95,7 +95,7 @@ function Days21Tour() {
                             <span className="text-3xl">📅</span>
                             <div className="text-left">
                                 <p className="text-sm uppercase tracking-widest">Duration</p>
-                                <p className="text-xl font-bold">21 Days</p>
+                                <p className="text-xl font-bold">21 Days / 20 Nights</p>
                             </div>
                         </div>
                     </div>
