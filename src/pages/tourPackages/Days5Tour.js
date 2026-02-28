@@ -334,7 +334,7 @@ function Days5Tour() {
                                     style={{ border: 0 }}  // ✅ style is an object
                                     loading="lazy"
                                     allowFullScreen        // notice the camelCase in React
-                                    src={`https://www.google.com/maps/embed/v1/directions?key=AIzaSyBjUk_Sn0lthNO_cpZO9n5hI1lmZPRUB0E
+                                    src={`https://www.google.com/maps/embed/v1/directions?key=AIzaSyDZqfXy1xcje1qgbyaF-Kb_qoRtUJc_lik
                                     &origin=Colombo,Sri+Lanka
                                     &destination=Colombo,Sri+Lanka
                                     &waypoints=Kandy,Sri+Lanka|Dambulla,Sri+Lanka|Sigiriya,Sri+Lanka|Minneriya,Sri+Lanka|Negombo,Sri+Lanka

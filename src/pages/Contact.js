@@ -87,7 +87,7 @@ function Contact() {
                             <div>
                                 <p className="text-sm font-semibold text-gray-500 mb-1">EMAIL</p>
                                 <p className="text-[#0b4c7d] font-medium">
-                                    sudeshperera666@gmail.com
+                                    sanjutours01@gmail.com
                                 </p>
                             </div>
 

@@ -680,7 +680,7 @@ function Days15Tour() {
                                     style={{ border: 0 }}
                                     loading="lazy"
                                     allowFullScreen
-                                    src="https://www.google.com/maps/embed/v1/directions?key=AIzaSyBjUk_Sn0lthNO_cpZO9n5hI1lmZPRUB0E&origin=Colombo,Sri+Lanka&destination=Colombo,Sri+Lanka&waypoints=Negombo,Sri+Lanka|Wilpattu+National+Park,Sri+Lanka|Anuradhapura,Sri+Lanka|Jaffna,Sri+Lanka|Trincomalee,Sri+Lanka|Pasikuda,Sri+Lanka|Sigiriya,Sri+Lanka|Kandy,Sri+Lanka|Bentota,Sri+Lanka&avoid=tolls|highways"
+                                    src="https://www.google.com/maps/embed/v1/directions?key=AIzaSyDZqfXy1xcje1qgbyaF-Kb_qoRtUJc_lik&origin=Colombo,Sri+Lanka&destination=Colombo,Sri+Lanka&waypoints=Negombo,Sri+Lanka|Wilpattu+National+Park,Sri+Lanka|Anuradhapura,Sri+Lanka|Jaffna,Sri+Lanka|Trincomalee,Sri+Lanka|Pasikuda,Sri+Lanka|Sigiriya,Sri+Lanka|Kandy,Sri+Lanka|Bentota,Sri+Lanka&avoid=tolls|highways"
                                 ></iframe>
                             </div>
 

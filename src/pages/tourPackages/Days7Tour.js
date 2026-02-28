@@ -388,7 +388,7 @@ function Days7Tour() {
                                     style={{ border: 0 }}
                                     loading="lazy"
                                     allowFullScreen
-                                    src="https://www.google.com/maps/embed/v1/directions?key=AIzaSyBjUk_Sn0lthNO_cpZO9n5hI1lmZPRUB0E
+                                    src="https://www.google.com/maps/embed/v1/directions?key=AIzaSyDZqfXy1xcje1qgbyaF-Kb_qoRtUJc_lik
                                     &origin=Colombo,Sri+Lanka
                                     &destination=Colombo,Sri+Lanka
                                     &waypoints=Sigiriya,Sri+Lanka|Kandy,Sri+Lanka|Nuwara+Eliya,Sri+Lanka|Ella,Sri+Lanka|Yala,Sri+Lanka|Galle,Sri+Lanka

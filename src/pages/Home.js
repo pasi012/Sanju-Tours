@@ -390,7 +390,7 @@ function Home() {
               <a
                 data-aos="zoom-in"
                 data-aos-delay="400"
-                href="/trips"
+                href="/tour-packages"
                 className="rounded-full bg-[#0ea5a4] px-10 py-3 text-sm font-semibold tracking-wider text-white transition hover:bg-[#0f766e]"
               >
                 View All Trip
@@ -399,7 +399,7 @@ function Home() {
               <a
                 data-aos="zoom-in"
                 data-aos-delay="500"
-                href="/contact"
+                href="/book-now"
                 className="rounded-full border border-white px-10 py-3 text-sm font-semibold tracking-wider text-white transition hover:bg-white hover:text-black"
               >
                 Book Now
@@ -910,7 +910,7 @@ function Home() {
               <img
                 src={luxuryCar}
                 alt="Luxury Cars"
-                className="w-full max-w-sm object-contain mb-6"
+                className="w-full h-80 object-fill mb-6"
               />
 
               <p className="text-gray-600 text-sm leading-relaxed max-w-xs">
@@ -930,7 +930,7 @@ function Home() {
               <img
                 src={van}
                 alt="Vans"
-                className="w-full max-w-sm object-contain mb-6"
+                className="w-full h-80 object-fill mb-6"
               />
 
               <p className="text-gray-600 text-sm leading-relaxed max-w-xs">
@@ -950,7 +950,7 @@ function Home() {
               <img
                 src={bus}
                 alt="Buses"
-                className="w-full max-w-sm object-contain mb-6"
+                className="w-full h-80 object-fill mb-6"
               />
 
               <p className="text-gray-600 text-sm leading-relaxed max-w-xs">

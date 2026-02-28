@@ -39,7 +39,7 @@ function Footer() {
             <div className="space-y-3 text-sm sm:text-[15px]">
               <div className="flex items-start justify-center gap-3 lg:justify-start">
                 <Mail size={16} className="mt-[2px]" />
-                <span>sudeshperera666@gmail.com</span>
+                <span>sanjutours01@gmail.com</span>
               </div>
 
               <div className="flex items-start justify-center gap-3 lg:justify-start">

@@ -5,6 +5,8 @@ import "aos/dist/aos.css";
 import aboutHero from "../assets/hero1.jpg";
 import aboutTaxi from "../assets/tour3.jpg";
 
+import founderImg from "../assets/founder.jpg";
+
 function About() {
     useEffect(() => {
         AOS.init({ duration: 1000, once: true });
@@ -43,8 +45,67 @@ function About() {
                 </div>
             </section>
 
+            {/* ================= FOUNDER SECTION ================= */}
+            <section className="w-full bg-gray-50 py-10">
+                <div className="mx-auto max-w-7xl px-4">
+
+                    {/* Title */}
+                    <div className="mb-12 text-center" data-aos="fade-up">
+                        <h2 className="text-3xl font-extrabold text-black sm:text-4xl">
+                            MEET OUR FOUNDER
+                        </h2>
+                        <div className="mt-2 h-1 w-20 bg-black mx-auto" />
+                    </div>
+
+                    <div className="grid grid-cols-1 items-center gap-10 md:grid-cols-2">
+
+                        {/* Founder Image */}
+                        <div data-aos="fade-right" className="flex justify-center">
+                            <img
+                                src={founderImg}
+                                alt="Founder"
+                                className="w-72 h-72 object-cover rounded-full shadow-lg border-4 border-white"
+                            />
+                        </div>
+
+                        {/* Founder Details */}
+                        <div data-aos="fade-left" className="space-y-4 text-gray-700">
+
+                            <h3 className="text-2xl font-bold text-black">
+                                Mr. Sanju Perera
+                            </h3>
+
+                            <p className="text-sm text-gray-500 font-medium">
+                                Founder & Managing Director
+                            </p>
+
+                            <p>
+                                Sanju Tours was founded with a vision to provide safe, reliable,
+                                and high-quality taxi and tour services across Sri Lanka.
+                                With years of dedication and hands-on experience in the
+                                transport industry, Mr. Sanju has built a trusted brand
+                                focused on customer satisfaction.
+                            </p>
+
+                            <p>
+                                His commitment to professionalism, punctuality, and comfort
+                                has helped the company grow from a small cab service in
+                                Katunayake into a nationwide travel and tour provider.
+                            </p>
+
+                            <p className="italic text-black font-medium">
+                                "Our goal is not just to drive you — but to create memorable
+                                journeys across Sri Lanka."
+                            </p>
+
+                        </div>
+                    </div>
+
+                </div>
+            </section>
+
             {/* ================= ABOUT COMPANY SECTION ================= */}
-            <section className="w-full bg-white py-20">
+            <section className="w-full bg-white py-10">
                 <div className="mx-auto max-w-7xl px-4">
 
                     {/* Title */}
@@ -73,13 +134,13 @@ function About() {
                             <p>
                                 Sanju Tours is a well-known company which has
                                 established a leading standard in all around Sri Lanka for more than
-                                10 years. Delivering a safe, comfortable and quick service to our
+                                3 years. Delivering a safe, comfortable and quick service to our
                                 prestige customers is the purpose of our company.
                             </p>
 
                             <p>
                                 We started our journey as a cab service company centralized mainly in
-                                Dehiwala and now have expanded our business to provide both travels
+                                Katunayake and now have expanded our business to provide both travels
                                 and tours all over the country with a great service.
                             </p>
 
