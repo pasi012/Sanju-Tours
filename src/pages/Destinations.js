@@ -255,7 +255,7 @@ function Destinations() {
                 <div className="relative z-10 flex h-full flex-col items-center justify-center px-4 text-center text-white">
                     <h1
                         data-aos="fade-up"
-                        className="mb-4 text-4xl font-extrabold sm:text-5xl md:text-6xl"
+                        className="text-3xl sm:text-4xl md:text-5xl lg:text-4xl font-extrabold leading-tight"
                     >
                         Destinations
                     </h1>
@@ -263,7 +263,7 @@ function Destinations() {
                     <p
                         data-aos="fade-up"
                         data-aos-delay="150"
-                        className="max-w-2xl text-sm text-gray-200 sm:text-base"
+                        className="mt-4 sm:mt-6 max-w-full sm:max-w-2xl md:max-w-3xl text-sm sm:text-base md:text-lg"
                     >
                         Best Places to Visit in Sri Lanka
                     </p>

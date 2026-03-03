@@ -20,6 +20,8 @@ export default function Navbar() {
     ["DESTINATIONS", "/destinations"],
     ["ABOUT US", "/about"],
     ["CONTACT US", "/contact"],
+    ["GALLERY", "/gallery"],
+    ["VEHICLE RENT", "/vehicle-rent"],
   ];
 
   return (
@@ -89,6 +91,8 @@ export default function Navbar() {
               ["DESTINATIONS", "/destinations"],
               ["ABOUT US", "/about"],
               ["CONTACT US", "/contact"],
+              ["GALLERY", "/gallery"],
+              ["VEHICLE RENT", "/vehicle-rent"],
               ["BOOK NOW", "/book-now"],
             ].map(([label, path]) => (
               <li key={label}>

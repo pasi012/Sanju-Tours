@@ -30,7 +30,7 @@ function About() {
                 <div className="relative z-10 flex h-full flex-col items-center justify-center px-4 text-center text-white">
                     <h1
                         data-aos="fade-up"
-                        className="mb-4 text-4xl font-extrabold sm:text-5xl md:text-6xl"
+                        className="text-3xl sm:text-4xl md:text-5xl lg:text-4xl font-extrabold leading-tight"
                     >
                         About Us
                     </h1>
@@ -38,7 +38,7 @@ function About() {
                     <p
                         data-aos="fade-up"
                         data-aos-delay="150"
-                        className="max-w-2xl text-sm text-gray-200 sm:text-base"
+                        className="mt-4 sm:mt-6 max-w-full sm:max-w-2xl md:max-w-3xl text-sm sm:text-base md:text-lg"
                     >
                         Reliable Taxi & Tour Services Across Sri Lanka
                     </p>
@@ -72,7 +72,7 @@ function About() {
                         <div data-aos="fade-left" className="space-y-4 text-gray-700">
 
                             <h3 className="text-2xl font-bold text-black">
-                                Mr. Sanju Perera
+                                Mr. Sudesh Perera
                             </h3>
 
                             <p className="text-sm text-gray-500 font-medium">
@@ -83,7 +83,7 @@ function About() {
                                 Sanju Tours was founded with a vision to provide safe, reliable,
                                 and high-quality taxi and tour services across Sri Lanka.
                                 With years of dedication and hands-on experience in the
-                                transport industry, Mr. Sanju has built a trusted brand
+                                transport industry, Mr. Sudesh has built a trusted brand
                                 focused on customer satisfaction.
                             </p>
 

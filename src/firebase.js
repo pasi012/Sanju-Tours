@@ -4,13 +4,13 @@ import { getFirestore } from "firebase/firestore";
 import { getStorage } from "firebase/storage";
 
 const firebaseConfig = {
-  apiKey: "AIzaSyC9uHQ6AnndY7_6B3UTTAtF_7lNqsP097o",
-  authDomain: "nature-srilanka-tours.firebaseapp.com",
-  projectId: "nature-srilanka-tours",
-  storageBucket: "nature-srilanka-tours.firebasestorage.app",
-  messagingSenderId: "149070979192",
-  appId: "1:149070979192:web:cf45198b0133d673288d8d",
-  measurementId: "G-KH7365727B"
+  apiKey: "AIzaSyC_kNgDM_TnF1rFqRLemZWEAxAwyCr9exk",
+  authDomain: "sanju-tours.firebaseapp.com",
+  projectId: "sanju-tours",
+  storageBucket: "sanju-tours.firebasestorage.app",
+  messagingSenderId: "879759794134",
+  appId: "1:879759794134:web:08420aaa41017ead9a4e77",
+  measurementId: "G-7JEGGWC4SF"
 };
 
 const app = initializeApp(firebaseConfig);

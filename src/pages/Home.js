@@ -38,6 +38,8 @@ import luxuryCar from "../assets/Toyota Axio.jpg";
 import van from "../assets/toyota-kdh-highroof.jpg";
 import bus from "../assets/rosa bus.jpg";
 
+import CustomerReviews from "../pages/CustomerReviews";
+
 function Home() {
 
   const navigate = useNavigate();
@@ -711,89 +713,7 @@ function Home() {
       <section className="bg-[#f9fafb] py-16 px-6 overflow-hidden">
         <div className="max-w-7xl mx-auto">
 
-          {/* Header */}
-          <div className="text-center mb-14">
-            <h2 className="text-3xl md:text-4xl font-semibold">
-              Customer Reviews
-            </h2>
-
-            <div className="mt-4 flex items-center justify-center gap-3">
-              <span className="text-2xl font-semibold">4.8 / 5</span>
-              <div className="flex text-yellow-400 text-xl">
-                ★★★★★
-              </div>
-              <span className="text-sm text-gray-500">
-                Based on 26K+ reviews
-              </span>
-            </div>
-          </div>
-
-          {/* Slider */}
-          <div className="relative overflow-hidden">
-            <div
-              className="flex transition-transform duration-700"
-              style={{ transform: `translateX(-${reviewIndex * 100}%)` }}
-            >
-              {reviews.map((review, i) => (
-                <div
-                  key={i}
-                  className="min-w-full md:min-w-[33.333%] px-4"
-                >
-                  <div className="bg-white rounded-xl shadow-md p-6 h-full flex flex-col">
-
-                    {/* Name */}
-                    <h3 className="font-semibold text-lg">
-                      {review.name}
-                    </h3>
-                    <p className="text-sm text-gray-500">
-                      {review.role}
-                    </p>
-
-                    {/* Stars */}
-                    <div className="flex text-yellow-400 mt-2">
-                      {"★".repeat(review.rating)}
-                    </div>
-
-                    {/* Title */}
-                    <h4 className="mt-4 font-semibold">
-                      "{review.title}"
-                    </h4>
-
-                    {/* Review */}
-                    <p className="mt-3 text-gray-600 text-sm leading-relaxed">
-                      {review.text}
-                    </p>
-
-                  </div>
-                </div>
-              ))}
-            </div>
-
-            {/* Controls */}
-            <div className="flex justify-center gap-4 mt-10">
-              <button
-                onClick={() =>
-                  setReviewIndex(prev =>
-                    prev === 0 ? reviews.length - 1 : prev - 1
-                  )
-                }
-                className="w-10 h-10 rounded-full bg-gray-800 text-white flex items-center justify-center hover:bg-gray-900 transition"
-              >
-                ‹
-              </button>
-
-              <button
-                onClick={() =>
-                  setReviewIndex(prev =>
-                    prev === reviews.length - 1 ? 0 : prev + 1
-                  )
-                }
-                className="w-10 h-10 rounded-full bg-gray-800 text-white flex items-center justify-center hover:bg-gray-900 transition"
-              >
-                ›
-              </button>
-            </div>
-          </div>
+          <CustomerReviews />
 
         </div>
       </section>
